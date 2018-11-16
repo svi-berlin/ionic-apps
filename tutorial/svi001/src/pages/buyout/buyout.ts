@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
@@ -13,13 +13,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   selector: 'page-buyout',
   templateUrl: 'buyout.html',
 })
-export class BuyoutPage {
+export class BuyoutPage implements OnInit {
+	
+	name: string;
+  	
+  	constructor(public navCtrl: NavController, public navParams: NavParams) {
+  	}
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  	ionViewDidLoad() {
+    	console.log('ionViewDidLoad BuyoutPage');
+  	}
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad BuyoutPage');
-  }
+	ngOnInit() {
+		this.name = this.navParams.get('product');
+	}  
+
+	onGoBuy () {
+		this.navCtrl.popToRoot();
+	}
 
 }
