@@ -1,4 +1,27 @@
 export default [
+  
+  {
+    category: 'Woody Allen',
+    quotes: [
+        {
+          id: '10',
+          person: 'Woody Allen',
+          text: 'Life is full of misery, loneliness, and suffering - and it\'s all over much too soon.'
+        },
+        {
+          id: '11',
+          person: 'Woody Allen',
+          text: 'I am thankful for laughter, except when milk comes out of my nose.'
+        },
+        {
+          id: '12',
+          person: 'Woody Allen',
+          text: 'Tradition is the illusion of permanance.'
+        }
+      ],
+      icon: 'brush'
+    },
+
   {
     category: 'inspirational',
     quotes: [
@@ -20,6 +43,7 @@ export default [
     ],
     icon: 'brush'
   },
+
   {
     category: 'ability',
     quotes: [
