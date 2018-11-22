@@ -1,0 +1,7 @@
+{
+  "name": "burmese-vocabulary",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
