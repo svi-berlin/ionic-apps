@@ -1,0 +1,41 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ vocabularyGroup.category | uppercase }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<!--	
+	<ion-card *ngFor="let vocabulary of vocabularyGroup.vocabulary; let i = index">
+		<ion-card-header>
+			#{{i+1}}
+		</ion-card-header>
+		<ion-card-content>
+			<p>{{ vocabulary.german }}</p>
+			<p class="author">{{ vocabulary.burmese }}</p>
+		</ion-card-content>
+		<ion-row>
+			<ion-col text-right>
+				<button 
+				ion-button 
+				clear 
+				small 
+				(click)="onAddToFavorite(quote)">Favorite</button>
+			</ion-col>
+		</ion-row>
+	</ion-card>
+-->
+
+	<flash-card *ngFor="let vocabulary of vocabularyGroup.vocabulary; let i = index">
+	 
+	    <div class="flash-card-front">{{ vocabulary.german }}</div>
+	 
+	    <div class="flash-card-back">{{ vocabulary.burmese }}</div>
+	 
+	</flash-card>
+
+
+</ion-content>

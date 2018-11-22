@@ -6,12 +6,16 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { LibraryPage } from '../pages/library/library';
+import { VocabularyPage } from '../pages/vocabulary/vocabulary';
 import { FlashCardComponent } from '../components/flash-card/flash-card';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
+    LibraryPage,
+    VocabularyPage,
     FlashCardComponent
   ],
   imports: [
@@ -21,7 +25,9 @@ import { FlashCardComponent } from '../components/flash-card/flash-card';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    LibraryPage,
+    VocabularyPage
   ],
   providers: [
     StatusBar,

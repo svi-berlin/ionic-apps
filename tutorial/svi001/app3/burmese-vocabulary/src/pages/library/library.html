@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Vokabeln</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<h3 text-center>Deutsch - Burmesisch</h3>
+<ion-list>
+	
+	<button 
+	ion-item 
+	*ngFor="let vocabularyGroup of vocabularyCollection"
+	[navPush]="vocabularyPage" 
+	[navParams]="vocabularyGroup">
+		<ion-icon [name]="vocabularyGroup.icon" item-left></ion-icon>
+		<h2>{{ vocabularyGroup.category | uppercase }}</h2>
+		<p>{{ vocabularyGroup.vocabulary.length }} Vokabeln</p>
+	</button>
+
+
+</ion-list>
+</ion-content>
