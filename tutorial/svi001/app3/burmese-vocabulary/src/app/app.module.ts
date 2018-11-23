@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { LibraryPage } from '../pages/library/library';
 import { VocabularyPage } from '../pages/vocabulary/vocabulary';
 import { FlashCardComponent } from '../components/flash-card/flash-card';
+import { TabsPage } from '../pages/tabs/tabs';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FlashCardComponent } from '../components/flash-card/flash-card';
     HomePage,
     LibraryPage,
     VocabularyPage,
-    FlashCardComponent
+    FlashCardComponent,
+    TabsPage
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,8 @@ import { FlashCardComponent } from '../components/flash-card/flash-card';
     MyApp,
     HomePage,
     LibraryPage,
-    VocabularyPage
+    VocabularyPage,
+    TabsPage
   ],
   providers: [
     StatusBar,
