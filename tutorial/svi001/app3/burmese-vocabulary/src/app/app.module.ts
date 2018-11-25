@@ -14,6 +14,7 @@ import { Lesson1Page } from '../pages/lesson1/lesson1';
 import { Lesson2Page } from '../pages/lesson2/lesson2';
 import { Lesson3Page } from '../pages/lesson3/lesson3';
 import { Lesson4Page } from '../pages/lesson4/lesson4';
+import { Lesson5Page } from '../pages/lesson5/lesson5';
 import { ReadingPage } from '../pages/reading/reading';
 
 
@@ -29,6 +30,7 @@ import { ReadingPage } from '../pages/reading/reading';
     Lesson2Page,
     Lesson3Page,
     Lesson4Page,
+    Lesson5Page,
     ReadingPage
 
   ],
@@ -47,6 +49,7 @@ import { ReadingPage } from '../pages/reading/reading';
     Lesson2Page,
     Lesson3Page,
     Lesson4Page,
+    Lesson5Page,
     ReadingPage
   ],
   providers: [
