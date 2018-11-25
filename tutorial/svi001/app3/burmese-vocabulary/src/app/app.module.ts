@@ -10,6 +10,12 @@ import { LibraryPage } from '../pages/library/library';
 import { VocabularyPage } from '../pages/vocabulary/vocabulary';
 import { FlashCardComponent } from '../components/flash-card/flash-card';
 import { TabsPage } from '../pages/tabs/tabs';
+import { Lesson1Page } from '../pages/lesson1/lesson1';
+import { Lesson2Page } from '../pages/lesson2/lesson2';
+import { Lesson3Page } from '../pages/lesson3/lesson3';
+import { Lesson4Page } from '../pages/lesson4/lesson4';
+import { ReadingPage } from '../pages/reading/reading';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +24,13 @@ import { TabsPage } from '../pages/tabs/tabs';
     LibraryPage,
     VocabularyPage,
     FlashCardComponent,
-    TabsPage
+    TabsPage,
+    Lesson1Page,
+    Lesson2Page,
+    Lesson3Page,
+    Lesson4Page,
+    ReadingPage
+
   ],
   imports: [
     BrowserModule,
@@ -30,7 +42,12 @@ import { TabsPage } from '../pages/tabs/tabs';
     HomePage,
     LibraryPage,
     VocabularyPage,
-    TabsPage
+    TabsPage,
+    Lesson1Page,
+    Lesson2Page,
+    Lesson3Page,
+    Lesson4Page,
+    ReadingPage
   ],
   providers: [
     StatusBar,

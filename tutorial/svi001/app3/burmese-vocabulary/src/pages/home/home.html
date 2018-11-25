@@ -1,19 +1,39 @@
 <ion-header>
-  <ion-navbar color="danger">
+  <ion-navbar>
     <ion-title>
-      Flash Cards
+      Burmesisch lernen
     </ion-title>
   </ion-navbar>
 </ion-header>
  
-<ion-content>
+<ion-content padding text-center>
  
-    <flash-card>
- 
-        <div class="flash-card-front">FLASH CARDS</div>
- 
-        <div class="flash-card-back">ARE COOL!</div>
- 
-    </flash-card>
+    <h3>Burmesisch für Anfänger</h3>
+
+    <ion-list>
+    	
+    	<button 
+    	ion-item 
+    	[navPush]="lesson1Page">
+			<p>1. Schön, dich kennen zu lernen.</p>	
+    	</button>
+    	<button 
+    	ion-item 
+    	[navPush]="lesson2Page">
+			<p>2. In Yangon ist es heiß, oder?</p>	
+    	</button>
+    	<button 
+    	ion-item 
+    	[navPush]="lesson3Page">
+			<p>3. Hast du noch Fragen?</p>	
+    	</button>
+    	<button 
+    	ion-item 
+    	[navPush]="lesson4Page">
+			<p>4. Lass uns ein Taxi nehmen.</p>	
+    	</button>
+
+    </ion-list>
+
  
 </ion-content>

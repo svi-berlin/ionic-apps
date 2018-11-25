@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { Lesson1Page } from '../lesson1/lesson1';
+import { Lesson2Page } from '../lesson2/lesson2';
+import { Lesson3Page } from '../lesson3/lesson3';
+import { Lesson4Page } from '../lesson4/lesson4';
 
 @Component({
   selector: 'page-home',
@@ -7,8 +11,9 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
-
-  }
+	lesson1Page = Lesson1Page;
+	lesson2Page = Lesson2Page;
+	lesson3Page = Lesson3Page;
+	lesson4Page = Lesson4Page;
 
 }
