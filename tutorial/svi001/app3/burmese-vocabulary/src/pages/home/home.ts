@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
 import { Lesson1Page } from '../lesson1/lesson1';
 import { Lesson2Page } from '../lesson2/lesson2';
 import { Lesson3Page } from '../lesson3/lesson3';
