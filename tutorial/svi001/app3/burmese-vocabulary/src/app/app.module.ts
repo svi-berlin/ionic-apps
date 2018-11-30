@@ -4,9 +4,6 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
-
-
-
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LibraryPage } from '../pages/library/library';
@@ -21,7 +18,8 @@ import { Lesson5Page } from '../pages/lesson5/lesson5';
 import { ReadingPage } from '../pages/reading/reading';
 import { ChatPage } from '../pages/chat/chat';
 import { ChatMessagesService } from '../services/chat-messages';
-
+import { SmartAudio } from '../providers/smart-audio/smart-audio';
+import { NativeAudio } from '@ionic-native/native-audio';
 
 @NgModule({
   declarations: [
@@ -63,7 +61,9 @@ import { ChatMessagesService } from '../services/chat-messages';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    ChatMessagesService
+    ChatMessagesService,
+    SmartAudio,
+    NativeAudio
   ]
 })
 export class AppModule {}
