@@ -1,25 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the ReadingPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import quotes from '../../data/quotes';
+import { Quote } from '../../data/quote.interface';
 
 @IonicPage()
 @Component({
   selector: 'page-reading',
   templateUrl: 'reading.html',
 })
-export class ReadingPage {
+export class ReadingPage implements OnInit {
+    ;
+	   quoteCollection: {category: string, quotes: Quote[], icon: string}[];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  	constructor(public navCtrl: NavController, public navParams: NavParams) {
+  	}
+    
+  	ionViewDidLoad() {
+    	console.log('ionViewDidLoad ReadingPage');
+  	}
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ReadingPage');
-  }
+  	ngOnInit() {
+		this.quoteCollection = quotes;
+    console.log(quotes);
+	}
 
 }

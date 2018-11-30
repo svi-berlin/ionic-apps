@@ -4,6 +4,9 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
+
+
+
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LibraryPage } from '../pages/library/library';
@@ -16,6 +19,8 @@ import { Lesson3Page } from '../pages/lesson3/lesson3';
 import { Lesson4Page } from '../pages/lesson4/lesson4';
 import { Lesson5Page } from '../pages/lesson5/lesson5';
 import { ReadingPage } from '../pages/reading/reading';
+import { ChatPage } from '../pages/chat/chat';
+import { ChatMessagesService } from '../services/chat-messages';
 
 
 @NgModule({
@@ -31,7 +36,8 @@ import { ReadingPage } from '../pages/reading/reading';
     Lesson3Page,
     Lesson4Page,
     Lesson5Page,
-    ReadingPage
+    ReadingPage,
+    ChatPage
 
   ],
   imports: [
@@ -50,12 +56,14 @@ import { ReadingPage } from '../pages/reading/reading';
     Lesson3Page,
     Lesson4Page,
     Lesson5Page,
-    ReadingPage
+    ReadingPage,
+    ChatPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ChatMessagesService
   ]
 })
 export class AppModule {}
