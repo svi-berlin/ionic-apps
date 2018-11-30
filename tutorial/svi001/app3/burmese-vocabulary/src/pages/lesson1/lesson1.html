@@ -8,27 +8,86 @@
 
 
 <ion-content padding text-center>
-<h3>Schön, dich kennen zu lernen.</h3>
+
+	<ion-card (click)="playAudio('001-ne-kaun-la')" padding>
+		<ion-card-content>
+			<ion-grid>
+				<ion-row>
+					<ion-col>
+						<p>
+							<strong>ne-kaun-la.</strong>	
+						</p>
+						<p>
+							<i>Wie geht es dir?</i>
+						</p>
+					</ion-col>
+				</ion-row>
+				<ion-row>
+					<ion-col>
+						<p>
+							<strong>ne-kaun-ba-deh. shin-yaw.</strong>	
+						</p>
+						<p>
+							<i>Mir geht es gut. Und dir?</i>
+						</p>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+		</ion-card-content>
+		<ion-row text-left>
+			<ion-col>
+				<button ion-button icon-start clear small>
+					<ion-icon name="text"></ion-icon>
+					<div>audio</div>
+				</button>
+			</ion-col>
+		</ion-row>
+	</ion-card>
 
 
-<ion-card padding>
-	<ion-grid>
-	  <ion-row>
-	    <ion-col col-2>
-	    	<ion-icon name="woman"></ion-icon>
-	    </ion-col>
-	    <ion-col col-10>
-			<p>
-				<i>Ich heiße Yadana. Und du?</i>
-			</p>
-			<hr>
-			<p>
-				<strong>ca-ma Yadana-ba. shin-yaw.</strong>
-			</p>
-		</ion-col>
-	  </ion-row>
-	</ion-grid>
-</ion-card>
+	<ion-card (click)="playAudio('002-nameh')" padding>
+		<ion-card-content>
+			<ion-grid>
+				<ion-row>
+					<ion-col>
+						<p>
+							<strong>ca-naw na-meh Aung-Aung-ba. na-meh beh-lo-ko-leh.</strong>	
+						</p>
+						<p>
+							<i>Mein Name ist Aung Aung. Wie ist dein Name?</i>
+						</p>
+					</ion-col>
+				</ion-row>
+				<ion-row>
+					<ion-col>
+						<p>
+							<strong>ca-ma na-meh Wai-Wai-ba.</strong>	
+						</p>
+						<p>
+							<i>Mein Name ist Wai Wai.</i>
+						</p>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+		</ion-card-content>
+		<ion-row text-left>
+			<ion-col>
+				<button ion-button icon-start clear small>
+					<ion-icon name="text"></ion-icon>
+					<div>audio</div>
+				</button>
+			</ion-col>
+		</ion-row>
+	</ion-card>
+
+
+
+
+
+
+
+
+
 <ion-card padding>
 	<ion-grid>
 	  <ion-row>

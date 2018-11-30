@@ -8,17 +8,24 @@ import { SmartAudio } from '../providers/smart-audio/smart-audio';
 @Component({
   templateUrl: 'app.html'
 })
+
 export class MyApp {
+  
   rootPage:any = TabsPage;
 
-  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, smartAudio: SmartAudio) {
-    platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
-      statusBar.styleDefault();
-      splashScreen.hide();
-      smartAudio.preload('tabSwitch', 'assets/audio/burmese-1.mp3');
-    });
-  }
+  constructor(
+    platform: Platform, 
+    statusBar: StatusBar, 
+    splashScreen: SplashScreen,
+
+    smartAudio: SmartAudio) {
+
+      platform.ready().then(() => {
+        statusBar.styleDefault();
+        splashScreen.hide();
+        smartAudio.preload('001-ne-kaun-la', 'assets/audio/001-ne-kaun-la.mp3');
+        smartAudio.preload('002-nameh', 'assets/audio/002-nameh.mp3');
+      });
+    }
 }
 

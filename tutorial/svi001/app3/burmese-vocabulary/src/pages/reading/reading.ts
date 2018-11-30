@@ -1,27 +1,23 @@
-import { Component, OnInit } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import quotes from '../../data/quotes';
-import { Quote } from '../../data/quote.interface';
+import { Component } from '@angular/core';
+import { SmartAudio } from '../../providers/smart-audio/smart-audio';
 
-@IonicPage()
 @Component({
   selector: 'page-reading',
   templateUrl: 'reading.html',
 })
-export class ReadingPage implements OnInit {
-    ;
-	   quoteCollection: {category: string, quotes: Quote[], icon: string}[];
 
-  	constructor(public navCtrl: NavController, public navParams: NavParams) {
-  	}
+export class ReadingPage {
+  
+  constructor(
+    public smartAudio: SmartAudio) { }
     
-  	ionViewDidLoad() {
-    	console.log('ionViewDidLoad ReadingPage');
-  	}
+ 
+    playAudio() {
+        this.smartAudio.play('001-ne-kaun-la');
+    }
 
-  	ngOnInit() {
-		this.quoteCollection = quotes;
-    console.log(quotes);
-	}
+
+
+  	
 
 }
