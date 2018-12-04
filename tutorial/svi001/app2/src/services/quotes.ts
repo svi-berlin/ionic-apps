@@ -5,10 +5,9 @@ export class QuotesService {
 
 	addQuoteToFavorites(quote: Quote) {
 		this.favoriteQuotes.push(quote);
-		console.log(this.favoriteQuotes);
 	}
 
-	removeQuoteToFavorites(quote: Quote) {
+	removeQuoteFromFavorites(quote: Quote) {
 		const position = this.favoriteQuotes.findIndex((quoteElement: Quote) => {
 			return quoteElement.id == quote.id;
 		} );
@@ -16,7 +15,12 @@ export class QuotesService {
 	}
 
 	getFavoriteQuotes() {
-		console.log(this.favoriteQuotes);
 		return this.favoriteQuotes.slice();
+	}
+
+	isQuoteFavorite(quote: Quote) {
+		return this.favoriteQuotes.find((quoteEl: Quote) => {
+			return quoteEl.id == quote.id;
+		});
 	}
 }
