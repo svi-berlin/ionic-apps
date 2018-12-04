@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Burmesisch lernen
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content padding text-center>
+ 
+    <h3>Burmesisch für Anfänger</h3>
+
+    <ion-list>
+    	
+    	<button 
+    	ion-item 
+    	[navPush]="lesson1Page">
+			<p>1. Schön, dich kennen zu lernen. <ion-icon name="text"></ion-icon> audio</p>	
+
+    	</button>
+    	<button 
+    	ion-item 
+    	[navPush]="lesson2Page">
+			<p>2. In Yangon ist es heiß, oder?</p>	
+    	</button>
+    	<button 
+    	ion-item 
+    	[navPush]="lesson3Page">
+			<p>3. Hast du noch Fragen?</p>	
+    	</button>
+    	<button 
+    	ion-item 
+    	[navPush]="lesson4Page">
+			<p>4. Lass uns ein Taxi nehmen.</p>	
+    	</button>
+        <button 
+        ion-item 
+        [navPush]="lesson5Page">
+            <p>5. Burmesische Schrift</p> 
+        </button>
+    </ion-list>
+
+ 
+</ion-content>

@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>chat</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+	<ion-list>
+		<ion-item *ngFor="let item of listMessages">{{item.message}}</ion-item>
+	</ion-list>
+
+<form #f="ngForm" (ngSubmit)="onAddMessage(f)" >
+	<ion-list>
+		<ion-item>
+			<ion-label fixed>Nachricht</ion-label>
+			<ion-input type="text" name="message" ngModel required></ion-input>
+		</ion-item>
+	</ion-list>
+	<button ion-button type="submit" block [disabled]="!f.valid">ok</button>	
+</form>
+</ion-content>
