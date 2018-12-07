@@ -50,3 +50,22 @@ p.speech:after {
 .bubble {
 	margin: 60px 0;
 }
+
+
+
+p.speech.goodchoice {
+	color: #fff;
+	background-color: green;
+}
+p.speech.goodchoice:after {
+	border-color: green transparent transparent green;
+}
+
+p.speech.wrongchoice {
+	color: #fff;
+	background-color: red;
+}
+p.speech.wrongchoice:after {
+	border-color: red transparent transparent red;
+}
+

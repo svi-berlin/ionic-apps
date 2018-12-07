@@ -7,17 +7,23 @@
 </ion-header>
 
 <ion-content padding>
-	<h1 [@myvisibility]="visibleState">
+	<h1>
 		Ich ... nach Hause.
 	</h1>
 
 <div class="bubble">
-	<p class="simple speech" [class.simplebump]="applyClass" (click)="toggleVisibility()">gehe</p>
+	<p class="simple speech" [class.goodchoice]="applyClass_1" (click)="giveAnswer(1)">gehe</p>
 </div>
-<div class="bubble">
-	<p class="simple speech" [class.simplebump]="applyClass" (click)="toggleVisibility()">gehst</p>
+<div class="bubble" [@myvisibility]="visibleState">
+	<p class="simple speech" [class.wrongchoice]="applyClass_2" (click)="giveAnswer(2)">gehst</p>
 </div>
-<div class="bubble">
-	<p class="simple speech" [class.simplebump]="applyClass" (click)="toggleVisibility()">gehen</p>
+<div class="bubble" [@myvisibility]="visibleState">
+	<p class="simple speech" [class.wrongchoice]="applyClass_3" (click)="giveAnswer(3)">gehen</p>
 </div>
+
+
+
+
+
+
 </ion-content>
