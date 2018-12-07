@@ -1,14 +1,23 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Deutsch A1
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-	<button ion-button (click)="toggleVisibility()">yeah!</button>
-	<p [@myvisibility]="visibleState">
-		Hallo my friend!
-	</p>
+	<h1 [@myvisibility]="visibleState">
+		Ich ... nach Hause.
+	</h1>
+
+<div class="bubble">
+	<p class="simple speech" [class.simplebump]="applyClass" (click)="toggleVisibility()">gehe</p>
+</div>
+<div class="bubble">
+	<p class="simple speech" [class.simplebump]="applyClass" (click)="toggleVisibility()">gehst</p>
+</div>
+<div class="bubble">
+	<p class="simple speech" [class.simplebump]="applyClass" (click)="toggleVisibility()">gehen</p>
+</div>
 </ion-content>

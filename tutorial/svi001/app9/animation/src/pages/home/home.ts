@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { trigger, state, style } from '@angular/animations';
+import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
   selector: 'page-home',
@@ -12,20 +12,23 @@ import { trigger, state, style } from '@angular/animations';
   		})),
   		state('invisible', style({
   			opacity: 0
-  		}))
+  		})),
+  		transition('* => *', animate('.5s'))
   	])
   ]
 })
+
 export class HomePage {
 	
 	visibleState = 'visible';
+  applyClass: boolean = false;
 
-  	constructor(public navCtrl: NavController) {
+  toggleVisibility() {
+    this.visibleState = (this.visibleState == 'visible') ? 'invisible' : 'visible';
+    this.applyClass = true;
+  }
 
-  	}
+  	
 
-  	toggleVisibility() {
-  		this.visibleState = (this.visibleState == 'visible') ? 'invisible' : 'visible';
-  	}
 
 }

@@ -1,3 +1,52 @@
-page-home {
+.simple {
+   border-radius:50%;
+   transition: transform cubic-bezier(0.5, 1.8, 0.8, 0.5) 2s;
 
+}
+
+.simplebump {
+   transform: translateX(200px);      // entlang der X-Achse bewegen
+}
+
+p.speech {
+  position: relative;
+  width: 200px;
+  height: 80px;
+  text-align: center;
+  line-height: 70px;
+  background-color: #fff;
+  border: 8px solid #666;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 2px 2px 4px #888;
+  -moz-box-shadow: 2px 2px 4px #888;
+  box-shadow: 2px 2px 4px #888;
+  font-size: 2.4rem;
+}
+
+p.speech:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 30px;
+  top: 65px;
+  border: 25px solid;
+  border-color: #666 transparent transparent #666;
+}
+
+p.speech:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 38px;
+  top: 63px;
+  border: 15px solid;
+  border-color: #fff transparent transparent #fff;
+}
+
+.bubble {
+	margin: 60px 0;
 }
