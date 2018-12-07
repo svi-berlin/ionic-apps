@@ -21,14 +21,11 @@ import { SmartAudio } from '../../providers/smart-audio/smart-audio';
 
 export class HomePage {
 	
-	visibleState = 'visible'; 
-  visibleStateResult = 'invisible';
-  
-
-  applyClass: boolean = false;
-  applyClass_1: boolean = false;
-  applyClass_2: boolean = false;
-  applyClass_3: boolean = false;
+	visibleState: string   = 'visible'; 
+  applyClass: boolean    = false;
+  applyClass_1: boolean  = false;
+  applyClass_2: boolean  = false;
+  applyClass_3: boolean  = false;
 
   constructor(public smartAudio: SmartAudio) {
 
@@ -41,10 +38,13 @@ export class HomePage {
   giveAnswer(answer) {
    
    if (answer == 1) {
-    this.applyClass_1 = true;
-    this.visibleState = 'invisible';
-    this.visibleStateResult = 'visible';
-    this.playAudio('applause');
+    if (this.applyClass_1 == false) {
+      this.applyClass_1 = true;
+      this.visibleState = 'invisible';
+      this.playAudio('applause');
+    } else {
+      // 
+    }
    }
    
    if (answer == 2) {
