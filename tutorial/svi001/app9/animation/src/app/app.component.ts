@@ -2,12 +2,8 @@ import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
-import { HomePage } from '../pages/home/home';
-
-
+import { TabsPage } from '../pages/tabs/tabs';
 import { SmartAudio } from '../providers/smart-audio/smart-audio';
-
 
 @Component({
   templateUrl: 'app.html'
@@ -15,7 +11,7 @@ import { SmartAudio } from '../providers/smart-audio/smart-audio';
 
 export class MyApp {
   
-  rootPage:any = HomePage;
+  rootPage:any = TabsPage;
 
   constructor(
 
@@ -30,6 +26,7 @@ export class MyApp {
       statusBar.styleDefault();
       splashScreen.hide();
       smartAudio.preload('applause', 'assets/audio/applause.mp3');
+      smartAudio.preload('applause-short', 'assets/audio/applause-short.mp3');
     });
   }
 

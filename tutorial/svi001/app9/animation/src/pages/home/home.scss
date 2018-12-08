@@ -11,9 +11,9 @@
 p.speech {
   position: relative;
   width: 200px;
-  height: 80px;
+  height: 47px;
   text-align: center;
-  line-height: 70px;
+  line-height: 30px;
   background-color: #fff;
   border: 8px solid #666;
   -webkit-border-radius: 30px;
@@ -31,7 +31,7 @@ p.speech:before {
   width: 0;
   height: 0;
   left: 30px;
-  top: 65px;
+  top: 32px;
   border: 25px solid;
   border-color: #666 transparent transparent #666;
 }
@@ -42,7 +42,7 @@ p.speech:after {
   width: 0;
   height: 0;
   left: 38px;
-  top: 63px;
+  top: 30px;
   border: 15px solid;
   border-color: #fff transparent transparent #fff;
 }
@@ -69,3 +69,29 @@ p.speech.wrongchoice:after {
 	border-color: red transparent transparent red;
 }
 
+.wrapper {
+    position: relative;
+    margin: 40px auto;
+    background: white;
+  }
+
+  .wrapper,
+  .wrapper * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .wrapper {
+    width: 250px;
+    height: 250px;
+  }
+
+  .wrapper .pie {
+    width: 50%;
+    height: 100%;
+    transform-origin: 100% 50%;
+    position: absolute;
+    background: #08C;
+    border: 5px solid rgba(0, 0, 0, 0.5);
+  }

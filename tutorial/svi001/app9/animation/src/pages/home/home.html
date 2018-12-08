@@ -1,29 +1,21 @@
 <ion-header>
+
   <ion-navbar>
-    <ion-title>
-      Deutsch A1
-    </ion-title>
+    <ion-title>Deutsch A1 Trainer</ion-title>
   </ion-navbar>
+
 </ion-header>
 
+
 <ion-content padding>
-	<h1>
-		Ich ... nach Hause.
-	</h1>
 
-<div class="bubble">
-	<p class="simple speech" [class.goodchoice]="applyClass_1" (click)="giveAnswer(1)">gehe</p>
-</div>
-<div class="bubble" [@myvisibility]="visibleState">
-	<p class="simple speech" [class.wrongchoice]="applyClass_2" (click)="giveAnswer(2)">gehst</p>
-</div>
-<div class="bubble" [@myvisibility]="visibleState">
-	<p class="simple speech" [class.wrongchoice]="applyClass_3" (click)="giveAnswer(3)">gehen</p>
-</div>
-
-
-
-
-
+<ion-card>
+	<ion-card-header>
+		Willkommen bei dem A1 Deutsch Trainer!
+	</ion-card-header>
+	<ion-card-content>
+		Hallo
+	</ion-card-content>
+</ion-card>
 
 </ion-content>

@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      trinken
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<p id="demo"></p>
+
+
+	<h1>
+		ich ... 
+	</h1>
+
+<div class="bubble">
+	<p class="simple speech" [class.goodchoice]="applyClass_1" (click)="giveAnswer(1)">trinke</p>
+</div>
+<div class="bubble" [@myvisibility]="visibleState">
+	<p class="simple speech" [class.wrongchoice]="applyClass_2" (click)="giveAnswer(2)">trinkst</p>
+</div>
+<div class="bubble" [@myvisibility]="visibleState">
+	<p class="simple speech" [class.wrongchoice]="applyClass_3" (click)="giveAnswer(3)">trinken</p>
+</div>
+
+
+
+</ion-content>
