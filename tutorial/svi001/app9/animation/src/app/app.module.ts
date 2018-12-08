@@ -11,6 +11,7 @@ import { L2Page } from '../pages/l2/l2';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SmartAudio } from '../providers/smart-audio/smart-audio';
 import { NativeAudio } from '@ionic-native/native-audio';
+import { QuotesService } from '../services/quotes';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { NativeAudio } from '@ionic-native/native-audio';
     SplashScreen,
     SmartAudio,
     NativeAudio,
+    QuotesService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
