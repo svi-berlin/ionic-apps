@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { SmartAudio } from '../../providers/smart-audio/smart-audio';
-import { L4Page } from '../l4/l4';
+import { L10Page } from '../l10/l10';
 
 @Component({
-  selector: 'page-l3',
-  templateUrl: 'l3.html',
+  selector: 'page-l9',
+  templateUrl: 'l9.html',
   animations: [
     trigger('myvisibility', [
       state('visible', style({
@@ -20,7 +20,7 @@ import { L4Page } from '../l4/l4';
   ]
 })
 
-export class L3Page {
+export class L9Page {
   
   visibleState: string   = 'visible'; 
   applyClass: boolean    = false;
@@ -54,7 +54,7 @@ export class L3Page {
       this.playAudio('applause');
       setTimeout(() => {
           console.log('hi');
-            this.navCtrl.push(L4Page);
+            this.navCtrl.push(L10Page);
         }, 2500);
     } 
    }

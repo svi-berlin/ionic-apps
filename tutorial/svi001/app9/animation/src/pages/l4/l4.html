@@ -1,0 +1,45 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>
+			haben
+		</ion-title>
+	</ion-navbar>
+</ion-header>
+<ion-content padding>
+	<h1>
+		wir ... 
+	</h1>
+	<ion-card padding>
+		<span class="bubble" [@myvisibility]="visibleState">
+			<p class="simple speech" [class.wrongchoice]="applyClass_2" (click)="giveAnswer(2)">habe</p>
+		</span>
+		<span class="bubble" [@myvisibility]="visibleState">
+			<p class="simple speech right" [class.wrongchoice]="applyClass_3" (click)="giveAnswer(3)">hast</p>
+		</span>
+		<span class="bubble" [@myvisibility]="visibleState">
+			<p class="simple speech" [class.wrongchoice]="applyClass_4" (click)="giveAnswer(4)">hat</p>
+		</span>
+		<span class="bubble">
+			<p class="simple speech right" [class.goodchoice]="applyClass_1" (click)="giveAnswer(1)">haben</p>
+		</span>
+		<span class="bubble" [@myvisibility]="visibleState">
+			<p class="simple speech" [class.wrongchoice]="applyClass_5" (click)="giveAnswer(5)">habt</p>
+		</span>
+		<span class="bubble" [@myvisibility]="visibleState">
+			<p class="simple speech right" [class.wrongchoice]="applyClass_6" (click)="giveAnswer(6)">haben</p>
+		</span>
+		<br><br>
+	</ion-card>
+	<div class="trophy" text-center>
+		<ion-icon name="trophy" class="active"></ion-icon>
+		<ion-icon name="trophy" class="active"></ion-icon>
+		<ion-icon name="trophy" class="active"></ion-icon>
+		<ion-icon name="trophy" [class.active]="applyClass_1"></ion-icon>
+		<ion-icon name="trophy"></ion-icon>
+		<ion-icon name="trophy"></ion-icon>
+		<ion-icon name="trophy"></ion-icon>
+		<ion-icon name="trophy"></ion-icon>
+		<ion-icon name="trophy"></ion-icon>
+		<ion-icon name="trophy"></ion-icon>
+	</div>
+</ion-content>
