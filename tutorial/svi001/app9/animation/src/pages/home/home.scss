@@ -88,3 +88,37 @@ p.speech.wrongchoice:after {
         color: gold;
       }
   }
+
+  ion-icon.congratulation {
+    
+    font-size: 16.2em;
+    color: gold;
+}
+
+
+.level1trophy {
+  margin-left:20px;
+  opacity:0;
+}
+
+
+.finished {
+.level1trophy {
+  opacity:1;
+  color: #fff;
+}  
+}
+
+ion-card.card-ios.finished {
+    background: #f54;
+    
+    .todo {
+      display:none;
+    }
+
+    .card-header-ios, .card-content {
+      color: #fff;
+    }
+
+
+}

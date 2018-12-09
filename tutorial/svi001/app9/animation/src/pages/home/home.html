@@ -17,11 +17,13 @@
 		Mit dem Deutsch A1 Trainer spielerisch Deutsch lernen.
 	</ion-card-content>
 </ion-card>
-<ion-card>
+<ion-card [class.finished]="level1Finished">
 	<ion-card-header>
 		Level 1
+		<ion-icon class="level1trophy" name="trophy"></ion-icon>
+
 	</ion-card-header>
-	<ion-card-content>
+	<ion-card-content class="todo">
 		Löse die ersten 10 Aufgaben, um Level 1 zu erreichen!
 	</ion-card-content>
 </ion-card>

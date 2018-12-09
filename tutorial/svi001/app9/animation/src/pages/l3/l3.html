@@ -1,7 +1,7 @@
 <ion-header>
 	<ion-navbar>
 		<ion-title>
-			machen
+			er, sie, es ... 
 		</ion-title>
 	</ion-navbar>
 </ion-header>
@@ -11,22 +11,22 @@
 	</h1>
 	<ion-card padding>
 		<div class="bubble" [@myvisibility]="visibleState">
-			<p class="simple speech" [class.wrongchoice]="applyClass_2" (click)="giveAnswer(2)">mache</p>
+			<p class="simple speech" [class.wrongchoice]="applyClass_2" (click)="giveAnswer(2)">lerne</p>
 		</div>
 		<div class="bubble" [@myvisibility]="visibleState">
-			<p class="simple speech right" [class.wrongchoice]="applyClass_3" (click)="giveAnswer(3)">machst</p>
+			<p class="simple speech right" [class.wrongchoice]="applyClass_3" (click)="giveAnswer(3)">bist</p>
 		</div>
 		<div class="bubble">
 			<p class="simple speech" [class.goodchoice]="applyClass_1" (click)="giveAnswer(1)">macht</p>
 		</div>
 		<div class="bubble" [@myvisibility]="visibleState">
-			<p class="simple speech right" [class.wrongchoice]="applyClass_4" (click)="giveAnswer(4)">machen</p>
+			<p class="simple speech right" [class.wrongchoice]="applyClass_4" (click)="giveAnswer(4)">gehen</p>
 		</div>
 		<div class="bubble" [@myvisibility]="visibleState">
-			<p class="simple speech" [class.wrongchoice]="applyClass_5" (click)="giveAnswer(5)">macht</p>
+			<p class="simple speech" [class.wrongchoice]="applyClass_5" (click)="giveAnswer(5)">habe</p>
 		</div>
 		<div class="bubble" [@myvisibility]="visibleState">
-			<p class="simple speech right" [class.wrongchoice]="applyClass_6" (click)="giveAnswer(6)">machen</p>
+			<p class="simple speech right" [class.wrongchoice]="applyClass_6" (click)="giveAnswer(6)">seid</p>
 		</div>
 		<br><br>
 	</ion-card>
