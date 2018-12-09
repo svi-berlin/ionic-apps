@@ -8,6 +8,9 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { HomePage } from '../pages/home/home';
 import { L1Page } from '../pages/l1/l1';
 import { L2Page } from '../pages/l2/l2';
+import { L3Page } from '../pages/l3/l3';
+
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SmartAudio } from '../providers/smart-audio/smart-audio';
 import { NativeAudio } from '@ionic-native/native-audio';
@@ -19,7 +22,8 @@ import { QuotesService } from '../services/quotes';
     HomePage,
     TabsPage,
     L1Page,
-    L2Page
+    L2Page,
+    L3Page
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,8 @@ import { QuotesService } from '../services/quotes';
     HomePage,
     TabsPage,
     L1Page,
-    L2Page
+    L2Page,
+    L3Page
   ],
   providers: [
     StatusBar,

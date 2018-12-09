@@ -10,12 +10,12 @@
 
 p.speech {
   position: relative;
-  width: 200px;
-  height: 47px;
+  width: 140px;
+  height: 40px;
   text-align: center;
   line-height: 30px;
   background-color: #fff;
-  border: 8px solid #666;
+  border: 4px solid #666;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
@@ -23,6 +23,12 @@ p.speech {
   -moz-box-shadow: 2px 2px 4px #888;
   box-shadow: 2px 2px 4px #888;
   font-size: 2.4rem;
+  margin-top: 0;
+  margin-bottom:10px;
+}
+
+.right {
+  margin-left: 88px !important;
 }
 
 p.speech:before {
@@ -31,8 +37,8 @@ p.speech:before {
   width: 0;
   height: 0;
   left: 30px;
-  top: 32px;
-  border: 25px solid;
+  top: 36px;
+  border: 22px solid;
   border-color: #666 transparent transparent #666;
 }
 
@@ -42,13 +48,13 @@ p.speech:after {
   width: 0;
   height: 0;
   left: 38px;
-  top: 30px;
-  border: 15px solid;
+  top: 28px;
+  border: 19px solid;
   border-color: #fff transparent transparent #fff;
 }
 
 .bubble {
-	margin: 60px 0;
+	margin: 0 0 60px 0;
 }
 
 
@@ -69,29 +75,16 @@ p.speech.wrongchoice:after {
 	border-color: red transparent transparent red;
 }
 
-.wrapper {
-    position: relative;
-    margin: 40px auto;
-    background: white;
-  }
 
-  .wrapper,
-  .wrapper * {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
 
-  .wrapper {
-    width: 250px;
-    height: 250px;
-  }
 
-  .wrapper .pie {
-    width: 50%;
-    height: 100%;
-    transform-origin: 100% 50%;
-    position: absolute;
-    background: #08C;
-    border: 5px solid rgba(0, 0, 0, 0.5);
+  .trophy {
+    ion-icon {
+      font-size: 2em;
+      opacity:0.2;
+    }
+    .active {
+        opacity: 1;
+        color: gold;
+      }
   }

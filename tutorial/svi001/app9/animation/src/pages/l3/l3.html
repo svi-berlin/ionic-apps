@@ -1,18 +1,45 @@
-<!--
-  Generated template for the L3Page page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>l3</ion-title>
-  </ion-navbar>
-
+	<ion-navbar>
+		<ion-title>
+			machen
+		</ion-title>
+	</ion-navbar>
 </ion-header>
-
-
 <ion-content padding>
-
+	<h1>
+		er, sie, es ... 
+	</h1>
+	<ion-card padding>
+		<span class="bubble" [@myvisibility]="visibleState">
+			<p class="simple speech" [class.wrongchoice]="applyClass_2" (click)="giveAnswer(2)">mache</p>
+		</span>
+		<span class="bubble" [@myvisibility]="visibleState">
+			<p class="simple speech right" [class.wrongchoice]="applyClass_3" (click)="giveAnswer(3)">machst</p>
+		</span>
+		<span class="bubble">
+			<p class="simple speech" [class.goodchoice]="applyClass_1" (click)="giveAnswer(1)">macht</p>
+		</span>
+		<span class="bubble" [@myvisibility]="visibleState">
+			<p class="simple speech right" [class.wrongchoice]="applyClass_4" (click)="giveAnswer(4)">machen</p>
+		</span>
+		<span class="bubble" [@myvisibility]="visibleState">
+			<p class="simple speech" [class.wrongchoice]="applyClass_5" (click)="giveAnswer(5)">macht</p>
+		</span>
+		<span class="bubble" [@myvisibility]="visibleState">
+			<p class="simple speech right" [class.wrongchoice]="applyClass_6" (click)="giveAnswer(6)">machen</p>
+		</span>
+		<br><br>
+	</ion-card>
+	<div class="trophy" text-center>
+		<ion-icon name="trophy" class="active"></ion-icon>
+		<ion-icon name="trophy" class="active"></ion-icon>
+		<ion-icon name="trophy" [class.active]="applyClass_1"></ion-icon>
+		<ion-icon name="trophy"></ion-icon>
+		<ion-icon name="trophy"></ion-icon>
+		<ion-icon name="trophy"></ion-icon>
+		<ion-icon name="trophy"></ion-icon>
+		<ion-icon name="trophy"></ion-icon>
+		<ion-icon name="trophy"></ion-icon>
+		<ion-icon name="trophy"></ion-icon>
+	</div>
 </ion-content>

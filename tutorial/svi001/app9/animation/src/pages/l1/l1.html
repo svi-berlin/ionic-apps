@@ -1,27 +1,45 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      gehen
-    </ion-title>
-  </ion-navbar>
+	<ion-navbar>
+		<ion-title>
+			gehen
+		</ion-title>
+	</ion-navbar>
 </ion-header>
-
 <ion-content padding>
-<p id="demo"></p>
-
-
 	<h1>
 		ich ... 
 	</h1>
-
-<div class="bubble">
-	<p class="simple speech" [class.goodchoice]="applyClass_1" (click)="giveAnswer(1)">gehe</p>
-</div>
-<div class="bubble" [@myvisibility]="visibleState">
-	<p class="simple speech" [class.wrongchoice]="applyClass_2" (click)="giveAnswer(2)">gehst</p>
-</div>
-
-
-
-
+	<ion-card padding>
+		<span class="bubble">
+			<p class="simple speech" [class.goodchoice]="applyClass_1" (click)="giveAnswer(1)">gehe</p>
+		</span>
+		<span class="bubble" [@myvisibility]="visibleState">
+			<p class="simple speech right" [class.wrongchoice]="applyClass_2" (click)="giveAnswer(2)">gehst</p>
+		</span>
+		<span class="bubble" [@myvisibility]="visibleState">
+			<p class="simple speech" [class.wrongchoice]="applyClass_3" (click)="giveAnswer(3)">geht</p>
+		</span>
+		<span class="bubble" [@myvisibility]="visibleState">
+			<p class="simple speech right" [class.wrongchoice]="applyClass_4" (click)="giveAnswer(4)">gehen</p>
+		</span>
+		<span class="bubble" [@myvisibility]="visibleState">
+			<p class="simple speech" [class.wrongchoice]="applyClass_5" (click)="giveAnswer(5)">geht</p>
+		</span>
+		<span class="bubble" [@myvisibility]="visibleState">
+			<p class="simple speech right" [class.wrongchoice]="applyClass_6" (click)="giveAnswer(6)">gehen</p>
+		</span>
+		<br><br>
+	</ion-card>
+	<div class="trophy" text-center>
+		<ion-icon name="trophy" [class.active]="applyClass_1"></ion-icon>
+		<ion-icon name="trophy"></ion-icon>
+		<ion-icon name="trophy"></ion-icon>
+		<ion-icon name="trophy"></ion-icon>
+		<ion-icon name="trophy"></ion-icon>
+		<ion-icon name="trophy"></ion-icon>
+		<ion-icon name="trophy"></ion-icon>
+		<ion-icon name="trophy"></ion-icon>
+		<ion-icon name="trophy"></ion-icon>
+		<ion-icon name="trophy"></ion-icon>
+	</div>
 </ion-content>
