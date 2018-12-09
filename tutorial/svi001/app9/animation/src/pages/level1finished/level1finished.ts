@@ -9,16 +9,9 @@ import { SmartAudio } from '../../providers/smart-audio/smart-audio';
 })
 
 export class Level1finishedPage {
-  
-  success: boolean = false;	
-
+  	
   constructor(
     public smartAudio: SmartAudio) {
-  }
-
-  ionViewDidLoad() {
-  	this.success = true;
-    this.playAudio('applause');
   }
   
   playAudio(mp3) {      
