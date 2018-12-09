@@ -51,6 +51,7 @@ export class L1Page {
     if (this.applyClass_1 == false) {
       this.applyClass_1 = true;
       this.visibleState = 'invisible';
+      console.log(this.visibleState);
       this.playAudio('applause');
       setTimeout(() => {
           console.log('hi');

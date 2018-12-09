@@ -10,24 +10,24 @@
 		du ... 
 	</h1>
 	<ion-card padding>
-		<span class="bubble" [@myvisibility]="visibleState">
+		<div class="bubble" [@myvisibility]="visibleState">
 			<p class="simple speech" [class.wrongchoice]="applyClass_2" (click)="giveAnswer(2)">sage</p>
-		</span>
-		<span class="bubble">
+		</div>
+		<div class="bubble">
 			<p class="simple speech right" [class.goodchoice]="applyClass_1" (click)="giveAnswer(1)">sagst</p>
-		</span>
-		<span class="bubble" [@myvisibility]="visibleState">
+		</div>
+		<div class="bubble" [@myvisibility]="visibleState">
 			<p class="simple speech" [class.wrongchoice]="applyClass_3" (click)="giveAnswer(3)">sagt</p>
-		</span>
-		<span class="bubble" [@myvisibility]="visibleState">
+		</div>
+		<div class="bubble" [@myvisibility]="visibleState">
 			<p class="simple speech right" [class.wrongchoice]="applyClass_4" (click)="giveAnswer(4)">sagen</p>
-		</span>
-		<span class="bubble" [@myvisibility]="visibleState">
+		</div>
+		<div class="bubble" [@myvisibility]="visibleState">
 			<p class="simple speech" [class.wrongchoice]="applyClass_5" (click)="giveAnswer(5)">sagt</p>
-		</span>
-		<span class="bubble" [@myvisibility]="visibleState">
+		</div>
+		<div class="bubble" [@myvisibility]="visibleState">
 			<p class="simple speech right" [class.wrongchoice]="applyClass_6" (click)="giveAnswer(6)">sagen</p>
-		</span>
+		</div>
 		<br><br>
 	</ion-card>
 	<div class="trophy" text-center>
