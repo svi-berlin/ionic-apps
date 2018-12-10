@@ -19,7 +19,7 @@ export class InfoPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad InfoPage');
+    // console.log('ionViewDidLoad InfoPage');
   }
 
 }

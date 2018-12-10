@@ -14,17 +14,34 @@
 		Willkommen!
 	</ion-card-header>
 	<ion-card-content>
-		Mit dem Deutsch A1 Trainer spielerisch Deutsch lernen.
+		Deutsch A1 Trainer
 	</ion-card-content>
 </ion-card>
-<ion-card [class.finished]="level1Finished">
+
+<ion-card class="clickable" (click)="startTraining()">
 	<ion-card-header>
 		Level 1
-		<ion-icon class="level1trophy" name="trophy"></ion-icon>
-
 	</ion-card-header>
 	<ion-card-content class="todo">
 		Löse die ersten 10 Aufgaben, um Level 1 zu erreichen!
+	</ion-card-content>
+</ion-card>
+
+<ion-card>
+	<ion-card-header>
+		Level 2
+	</ion-card-header>
+	<ion-card-content class="todo">
+		In der nächsten Version enthalten: Wochentage und Zahlen.
+	</ion-card-content>
+</ion-card>
+
+<ion-card>
+	<ion-card-header>
+		Level 3
+	</ion-card-header>
+	<ion-card-content class="todo">
+		In der nächsten Version enthalten: Begrüßung und Vorstellung.
 	</ion-card-content>
 </ion-card>
 

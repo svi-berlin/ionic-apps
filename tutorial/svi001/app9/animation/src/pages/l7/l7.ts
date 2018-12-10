@@ -53,7 +53,7 @@ export class L7Page {
       this.visibleState = 'invisible';
       this.playAudio('applause-short');
       setTimeout(() => {
-          console.log('hi');
+          // console.log('hi');
             this.navCtrl.push(L8Page);
         }, 1500);
     } 
