@@ -52,11 +52,11 @@ export class L1Page {
       this.applyClass_1 = true;
       this.visibleState = 'invisible';
       console.log(this.visibleState);
-      this.playAudio('applause');
+      this.playAudio('applause-short');
       setTimeout(() => {
           console.log('hi');
             this.navCtrl.push(L2Page);
-        }, 2500);
+        }, 1500);
     } 
    }
    

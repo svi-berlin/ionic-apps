@@ -51,11 +51,11 @@ export class L3Page {
     if (this.applyClass_1 == false) {
       this.applyClass_1 = true;
       this.visibleState = 'invisible';
-      this.playAudio('applause');
+      this.playAudio('applause-short');
       setTimeout(() => {
           console.log('hi');
             this.navCtrl.push(L4Page);
-        }, 2500);
+        }, 1500);
     } 
    }
    

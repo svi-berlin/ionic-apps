@@ -12,6 +12,7 @@ export class Level1finishedPage {
   	
   constructor(
     public smartAudio: SmartAudio) {
+    this.playAudio('applause');
   }
   
   playAudio(mp3) {      
