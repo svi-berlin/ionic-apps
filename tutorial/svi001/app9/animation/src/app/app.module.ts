@@ -18,6 +18,15 @@ import { L9Page } from '../pages/l9/l9';
 import { L10Page } from '../pages/l10/l10';
 import { L11Page } from '../pages/l11/l11';
 import { L12Page } from '../pages/l12/l12';
+import { L13Page } from '../pages/l13/l13';
+import { L14Page } from '../pages/l14/l14';
+import { L15Page } from '../pages/l15/l15';
+import { L16Page } from '../pages/l16/l16';
+import { L17Page } from '../pages/l17/l17';
+import { L18Page } from '../pages/l18/l18';
+import { L19Page } from '../pages/l19/l19';
+import { L20Page } from '../pages/l20/l20';
+import { Level2finishedPage } from '../pages/level2finished/level2finished';
 
 import { Level1finishedPage } from '../pages/level1finished/level1finished';
 
@@ -42,7 +51,16 @@ import { QuotesService } from '../services/quotes';
     L10Page,
     L11Page,
     L12Page,
-    Level1finishedPage
+    L13Page,
+    L14Page,
+    L15Page,
+    L16Page,
+    L17Page,
+    L18Page,
+    L19Page,
+    L20Page,
+    Level1finishedPage,
+    Level2finishedPage
   ],
   imports: [
     BrowserModule,
@@ -66,7 +84,16 @@ import { QuotesService } from '../services/quotes';
     L10Page,
     L11Page,
     L12Page,
-    Level1finishedPage
+    L13Page,
+    L14Page,
+    L15Page,
+    L16Page,
+    L17Page,
+    L18Page,
+    L19Page,
+    L20Page,
+    Level1finishedPage,
+    Level2finishedPage
   ],
   providers: [
     StatusBar,
