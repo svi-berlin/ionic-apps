@@ -2,29 +2,28 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 // console.log
-import { L3Page } from '../l3/l3';
+import { L12Page } from '../l12/l12';
 
 @Component({
-  selector: 'page-l2',
-  templateUrl: 'l2.html',
+  selector: 'page-l11',
+  templateUrl: 'l11.html',
   animations: [
-    trigger('myvisibility', [
-      state('visible', style({
-        opacity: 1
-      })),
-      state('invisible', style({
-        opacity: 0
-      })),
-      transition('* => *', animate('.5s'))
-    ])
+  	trigger('myvisibility', [
+  		state('visible', style({
+  			opacity: 1
+  		})),
+  		state('invisible', style({
+  			opacity: 0
+  		})),
+  		transition('* => *', animate('.5s'))
+  	])
   ]
 })
 
-export class L2Page {
-  
-  visibleState: string   = 'visible'; 
+export class L11Page {
+	
+	visibleState: string   = 'visible'; 
   applyClass: boolean    = false;
-  
   applyClass_1: boolean  = false;
   applyClass_2: boolean  = false;
   applyClass_3: boolean  = false;
@@ -32,29 +31,18 @@ export class L2Page {
   applyClass_5: boolean  = false;
   applyClass_6: boolean  = false;
 
-   falseAnswers: number = 0;
+  falseAnswers: number = 0;
 
-
-  constructor(
-
-    public navCtrl: NavController) {
+  constructor(public navCtrl: NavController) {
 
   }
-
-
-
-
-
   giveAnswer(answer) {
-   
    if (answer == 1) {
     if (this.applyClass_1 == false) {
       this.applyClass_1 = true;
       this.visibleState = 'invisible';
-
       setTimeout(() => {
-          // console.log('hi');
-            this.navCtrl.push(L3Page);
+            this.navCtrl.push(L12Page);
         }, 1500);
     } 
    } else {
@@ -64,7 +52,6 @@ export class L2Page {
       this.navCtrl.popToRoot();
     }
    }
-   
    if (answer == 2) {
     this.applyClass_2 = true;
    }
@@ -80,10 +67,5 @@ export class L2Page {
   if (answer == 6) {
     this.applyClass_6 = true;
    }
-
-
   }
-    
-
-
 }

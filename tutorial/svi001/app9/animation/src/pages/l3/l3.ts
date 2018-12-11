@@ -31,7 +31,8 @@ export class L3Page {
   applyClass_4: boolean  = false;
   applyClass_5: boolean  = false;
   applyClass_6: boolean  = false;
-
+ 
+  falseAnswers: number = 0;
 
   constructor(
 
@@ -55,6 +56,12 @@ export class L3Page {
             this.navCtrl.push(L4Page);
         }, 1500);
     } 
+   } else {
+    this.falseAnswers++;
+    if (this.falseAnswers > 2) {
+      this.falseAnswers = 0;
+      this.navCtrl.popToRoot();
+    }
    }
    
    if (answer == 2) {

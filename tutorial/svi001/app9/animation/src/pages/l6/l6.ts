@@ -32,7 +32,7 @@ export class L6Page {
   applyClass_5: boolean  = false;
   applyClass_6: boolean  = false;
 
-
+ falseAnswers: number = 0;
   constructor(
 
     public navCtrl: NavController) {
@@ -55,6 +55,12 @@ export class L6Page {
             this.navCtrl.push(L7Page);
         }, 1500);
     } 
+   } else {
+    this.falseAnswers++;
+    if (this.falseAnswers > 2) {
+      this.falseAnswers = 0;
+      this.navCtrl.popToRoot();
+    }
    }
    
    if (answer == 2) {

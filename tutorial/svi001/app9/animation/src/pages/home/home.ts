@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { L1Page } from '../l1/l1';
-import { L2Page } from '../l2/l2';
+import { L11Page } from '../l11/l11';
 
 @IonicPage()
 @Component({
@@ -20,7 +20,7 @@ export class HomePage {
   				this.navCtrl.push(L1Page);	
   			}
   			if (level==2) {
-  				this.navCtrl.push(L2Page);	
+  				this.navCtrl.push(L11Page);	
   			}
   	}
 

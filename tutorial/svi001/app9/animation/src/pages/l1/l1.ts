@@ -24,7 +24,6 @@ export class L1Page {
 	
 	visibleState: string   = 'visible'; 
   applyClass: boolean    = false;
-  
   applyClass_1: boolean  = false;
   applyClass_2: boolean  = false;
   applyClass_3: boolean  = false;
@@ -32,32 +31,27 @@ export class L1Page {
   applyClass_5: boolean  = false;
   applyClass_6: boolean  = false;
 
+  falseAnswers: number = 0;
 
-  constructor(
-
-    public navCtrl: NavController) {
+  constructor(public navCtrl: NavController) {
 
   }
-
-
-
-
-
   giveAnswer(answer) {
-   
    if (answer == 1) {
     if (this.applyClass_1 == false) {
       this.applyClass_1 = true;
       this.visibleState = 'invisible';
-      // console.log(this.visibleState);
-
       setTimeout(() => {
-          // console.log('hi');
             this.navCtrl.push(L2Page);
         }, 1500);
     } 
+   } else {
+    this.falseAnswers++;
+    if (this.falseAnswers > 2) {
+      this.falseAnswers = 0;
+      this.navCtrl.popToRoot();
+    }
    }
-   
    if (answer == 2) {
     this.applyClass_2 = true;
    }
@@ -73,10 +67,5 @@ export class L1Page {
   if (answer == 6) {
     this.applyClass_6 = true;
    }
-
-
   }
-  	
-
-
 }

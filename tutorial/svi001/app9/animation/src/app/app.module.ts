@@ -16,6 +16,9 @@ import { L7Page } from '../pages/l7/l7';
 import { L8Page } from '../pages/l8/l8';
 import { L9Page } from '../pages/l9/l9';
 import { L10Page } from '../pages/l10/l10';
+import { L11Page } from '../pages/l11/l11';
+import { L12Page } from '../pages/l12/l12';
+
 import { Level1finishedPage } from '../pages/level1finished/level1finished';
 
 
@@ -37,6 +40,8 @@ import { QuotesService } from '../services/quotes';
     L8Page,
     L9Page,
     L10Page,
+    L11Page,
+    L12Page,
     Level1finishedPage
   ],
   imports: [
@@ -59,6 +64,8 @@ import { QuotesService } from '../services/quotes';
     L8Page,
     L9Page,
     L10Page,
+    L11Page,
+    L12Page,
     Level1finishedPage
   ],
   providers: [
