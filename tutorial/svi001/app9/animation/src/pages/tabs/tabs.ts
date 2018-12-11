@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { HomePage } from '../home/home';
 import { L1Page } from '../l1/l1';
-import { PrivacyPage } from '../privacy/privacy';
 
 @Component({
   selector: 'page-tabs',
@@ -11,5 +10,4 @@ import { PrivacyPage } from '../privacy/privacy';
 export class TabsPage {
 	homePage = HomePage;
 	l1Page = L1Page;
-	privacyPage = PrivacyPage;
 }

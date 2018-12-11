@@ -3,7 +3,7 @@ import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { TabsPage } from '../pages/tabs/tabs';
-import { SmartAudio } from '../providers/smart-audio/smart-audio';
+
 import { timer } from 'rxjs/observable/timer';
 
 @Component({
@@ -19,8 +19,7 @@ export class MyApp {
 
     platform: Platform, 
     statusBar: StatusBar, 
-    splashScreen: SplashScreen,
-    smartAudio: SmartAudio
+    splashScreen: SplashScreen
 
     ) {
     
@@ -28,8 +27,6 @@ export class MyApp {
       statusBar.styleDefault();
       splashScreen.hide();
       timer(3000).subscribe(()=>this.showSplash = false);
-      smartAudio.preload('applause', 'assets/audio/applause.mp3');
-      smartAudio.preload('applause-short', 'assets/audio/applause-short.mp3');
     });
   }
 

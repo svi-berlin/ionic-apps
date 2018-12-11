@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { trigger, state, style, transition, animate } from '@angular/animations';
-import { SmartAudio } from '../../providers/smart-audio/smart-audio';
+// console.log
 import { L8Page } from '../l8/l8';
 
 @Component({
@@ -34,14 +34,12 @@ export class L7Page {
 
 
   constructor(
-    public smartAudio: SmartAudio, 
+
     public navCtrl: NavController) {
 
   }
 
-  playAudio(mp3) {      
-    this.smartAudio.play(mp3);
-  }
+
 
 
 
@@ -51,7 +49,7 @@ export class L7Page {
     if (this.applyClass_1 == false) {
       this.applyClass_1 = true;
       this.visibleState = 'invisible';
-      this.playAudio('applause-short');
+
       setTimeout(() => {
           // console.log('hi');
             this.navCtrl.push(L8Page);
