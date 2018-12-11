@@ -6,27 +6,25 @@
 	</ion-navbar>
 </ion-header>
 <ion-content padding>
-	<h1>
-		ich ... 
-	</h1>
+<button ion-button color="secondary" round>ich ...</button>
 	<ion-card padding>
 		<div class="bubble">
-			<p class="simple speech" [class.goodchoice]="applyClass_1" (click)="giveAnswer(1)">gehe</p>
+			<button [class.goodchoice]="applyClass_1" (click)="giveAnswer(1)" ion-button round>gehe</button>
 		</div>
 		<div class="bubble" [@myvisibility]="visibleState">
-			<p class="simple speech right" [class.wrongchoice]="applyClass_2" (click)="giveAnswer(2)">hast</p>
+			<button [class.danger]="applyClass_2" (click)="giveAnswer(2)" ion-button round>hast</button>
 		</div>
 		<div class="bubble" [@myvisibility]="visibleState">
-			<p class="simple speech" [class.wrongchoice]="applyClass_3" (click)="giveAnswer(3)">sagt</p>
+			<button [class.danger]="applyClass_3" (click)="giveAnswer(3)" ion-button round>sagt</button>
 		</div>
 		<div class="bubble" [@myvisibility]="visibleState">
-			<p class="simple speech right" [class.wrongchoice]="applyClass_4" (click)="giveAnswer(4)">seid</p>
+			<button [class.danger]="applyClass_4" (click)="giveAnswer(4)" ion-button round>seid</button>
 		</div>
 		<div class="bubble" [@myvisibility]="visibleState">
-			<p class="simple speech" [class.wrongchoice]="applyClass_5" (click)="giveAnswer(5)">lernt</p>
+			<button ion-button round [class.danger]="applyClass_5" (click)="giveAnswer(5)">lernt</button>
 		</div>
 		<div class="bubble" [@myvisibility]="visibleState">
-			<p class="simple speech right" [class.wrongchoice]="applyClass_6" (click)="giveAnswer(6)">machen</p>
+			<button ion-button round [class.danger]="applyClass_6" (click)="giveAnswer(6)">machen</button>
 		</div>
 		<br><br>
 	</ion-card>

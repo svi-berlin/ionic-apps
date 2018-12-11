@@ -11,22 +11,22 @@
 	</h1>
 	<ion-card padding>
 		<div class="bubble" [@myvisibility]="visibleState">
-			<p class="simple speech" [class.wrongchoice]="applyClass_2" (click)="giveAnswer(2)">bin</p>
+			<button ion-button round [class.wrongchoice]="applyClass_2" (click)="giveAnswer(2)">bin</button>
 		</div>
 		<div class="bubble" [@myvisibility]="visibleState">
-			<p class="simple speech right" [class.wrongchoice]="applyClass_3" (click)="giveAnswer(3)">gehen</p>
+			<button ion-button round [class.wrongchoice]="applyClass_3" (click)="giveAnswer(3)">gehen</button>
 		</div>
 		<div class="bubble" [@myvisibility]="visibleState">
-			<p class="simple speech" [class.wrongchoice]="applyClass_4" (click)="giveAnswer(4)">machst</p>
+			<button ion-button round [class.wrongchoice]="applyClass_4" (click)="giveAnswer(4)">machst</button>
 		</div>
 		<div class="bubble" [@myvisibility]="visibleState">
-			<p class="simple speech right" [class.wrongchoice]="applyClass_5" (click)="giveAnswer(5)">lernen</p>
+			<button ion-button round [class.wrongchoice]="applyClass_5" (click)="giveAnswer(5)">lernen</button>
 		</div>
 		<div class="bubble">
-			<p class="simple speech" [class.goodchoice]="applyClass_1" (click)="giveAnswer(1)">seid</p>
+			<button ion-button round [class.goodchoice]="applyClass_1" (click)="giveAnswer(1)">seid</button>
 		</div>
 		<div class="bubble" [@myvisibility]="visibleState">
-			<p class="simple speech right" [class.wrongchoice]="applyClass_6" (click)="giveAnswer(6)">haben</p>
+			<button ion-button round [class.wrongchoice]="applyClass_6" (click)="giveAnswer(6)">haben</button>
 		</div>
 		<br><br>
 	</ion-card>
