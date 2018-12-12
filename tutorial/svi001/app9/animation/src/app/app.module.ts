@@ -4,6 +4,12 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
+import { HttpModule } from '@angular/http';
+import { FlashCardComponent } from '../components/flash-card/flash-card';
+
+
+
+import { InfoPage } from '../pages/info/info';
 import { TabsPage } from '../pages/tabs/tabs';
 import { HomePage } from '../pages/home/home';
 import { L1Page } from '../pages/l1/l1';
@@ -45,11 +51,13 @@ import { HomefinishedPage } from '../pages/homefinished/homefinished';
 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { QuotesService } from '../services/quotes';
+
+import { DataProvider } from '../providers/data/data';
 
 @NgModule({
   declarations: [
     MyApp,
+    InfoPage,
     HomePage,
     TabsPage,
     L1Page,
@@ -85,16 +93,19 @@ import { QuotesService } from '../services/quotes';
     Level1finishedPage,
     Level2finishedPage,
     Level3finishedPage,
-    HomefinishedPage
+    HomefinishedPage,
+    FlashCardComponent
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     BrowserAnimationsModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    InfoPage,
     HomePage,
     TabsPage,
     L1Page,
@@ -135,8 +146,9 @@ import { QuotesService } from '../services/quotes';
   providers: [
     StatusBar,
     SplashScreen,
-    QuotesService,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    DataProvider
   ]
 })
 export class AppModule {}
