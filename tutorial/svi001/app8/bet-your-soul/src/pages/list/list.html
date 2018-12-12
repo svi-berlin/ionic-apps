@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>bet your soul</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+	<div padding>
+    <ion-segment [(ngModel)]="bets">
+      <ion-segment-button value="fire">
+        <ion-icon name="color-wand"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="burning">
+        <ion-icon name="bonfire"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="ashes">
+        <ion-icon name="nuclear"></ion-icon>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="bets">
+    <ion-list *ngSwitchCase="'fire'">
+      <ion-item>
+            <h2>Welcome my friend!</h2>
+
+            <p>Wenn du mitwetten willst, bist du hier richtig.</p>
+            <p>Hier werden alle Wetten angezeigt, in die du noch einsteigen kannst!</p>
+            <p>Aber beeil dich! Die Uhr tickt! tic toc ...</p>
+          
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'burning'">
+      <ion-item>
+        <h2>Schlachtfeld</h2>
+      </ion-item>
+
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'ashes'">
+      <ion-item>
+        <h2>Endlager</h2>
+      </ion-item>
+
+    </ion-list>
+
+
+  </div>
+
+</ion-content>
