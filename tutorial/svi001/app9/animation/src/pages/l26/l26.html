@@ -1,0 +1,49 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>
+			das Haus
+		</ion-title>
+	</ion-navbar>
+</ion-header>
+<ion-content padding>
+<button ion-button color="secondary" round>Ich sehe ...</button>
+	<ion-card padding>
+		
+		
+
+		<div class="bubble" [@myvisibility]="visibleState">
+			<button [color]="applyClass_4 ? 'danger' : 'primary'" (click)="giveAnswer(4)" ion-button round>eine Haus.</button>
+		</div>
+<div class="bubble">
+			<button [color]="applyClass_1 ? 'secondary' : 'primary'" (click)="giveAnswer(1)" ion-button round>kein Haus.</button>
+		</div>
+		<div class="bubble" [@myvisibility]="visibleState">
+			<button ion-button round [color]="applyClass_5 ? 'danger' : 'primary'" (click)="giveAnswer(5)">einen Haus.</button>
+		</div>
+		<div class="bubble" [@myvisibility]="visibleState">
+			<button [color]="applyClass_2 ? 'danger' : 'primary'" (click)="giveAnswer(2)" ion-button round>die Haus.</button>
+		</div>
+						
+		<div class="bubble" [@myvisibility]="visibleState">
+			<button ion-button round [color]="applyClass_6 ? 'danger' : 'primary'" (click)="giveAnswer(6)">Haus.</button>
+		</div>
+				<div class="bubble" [@myvisibility]="visibleState">
+			<button [color]="applyClass_3 ? 'danger' : 'primary'" (click)="giveAnswer(3)" ion-button round>der Haus.</button>
+		</div>
+		<br><br>
+	</ion-card>
+	<div class="trophy" text-center>
+		<ion-icon name="trophy" class="active"></ion-icon>
+		<ion-icon name="trophy" class="active"></ion-icon>
+		<ion-icon name="trophy" class="active"></ion-icon>
+		<ion-icon name="trophy" class="active"></ion-icon>
+		<ion-icon name="trophy" class="active"></ion-icon>
+		<ion-icon name="trophy" [class.active]="applyClass_1"></ion-icon>
+		
+		<ion-icon name="trophy"></ion-icon>
+		<ion-icon name="trophy"></ion-icon>
+		<ion-icon name="trophy"></ion-icon>
+		<ion-icon name="trophy"></ion-icon>
+
+	</div>
+</ion-content>

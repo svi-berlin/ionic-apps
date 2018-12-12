@@ -26,9 +26,22 @@ import { L17Page } from '../pages/l17/l17';
 import { L18Page } from '../pages/l18/l18';
 import { L19Page } from '../pages/l19/l19';
 import { L20Page } from '../pages/l20/l20';
-import { Level2finishedPage } from '../pages/level2finished/level2finished';
+import { L21Page } from '../pages/l21/l21';
+import { L22Page } from '../pages/l22/l22';
+import { L23Page } from '../pages/l23/l23';
+import { L24Page } from '../pages/l24/l24';
+import { L25Page } from '../pages/l25/l25';
+import { L26Page } from '../pages/l26/l26';
+import { L27Page } from '../pages/l27/l27';
+import { L28Page } from '../pages/l28/l28';
+import { L29Page } from '../pages/l29/l29';
+import { L30Page } from '../pages/l30/l30';
 
 import { Level1finishedPage } from '../pages/level1finished/level1finished';
+import { Level2finishedPage } from '../pages/level2finished/level2finished';
+import { Level3finishedPage } from '../pages/level3finished/level3finished';
+import { HomefinishedPage } from '../pages/homefinished/homefinished';
+
 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -59,8 +72,20 @@ import { QuotesService } from '../services/quotes';
     L18Page,
     L19Page,
     L20Page,
+    L21Page,
+    L22Page,
+    L23Page,
+    L24Page,
+    L25Page,
+    L26Page,
+    L27Page,
+    L28Page,
+    L29Page,
+    L30Page,
     Level1finishedPage,
-    Level2finishedPage
+    Level2finishedPage,
+    Level3finishedPage,
+    HomefinishedPage
   ],
   imports: [
     BrowserModule,
@@ -92,8 +117,20 @@ import { QuotesService } from '../services/quotes';
     L18Page,
     L19Page,
     L20Page,
+    L21Page,
+    L22Page,
+    L23Page,
+    L24Page,
+    L25Page,
+    L26Page,
+    L27Page,
+    L28Page,
+    L29Page,
+    L30Page,
     Level1finishedPage,
-    Level2finishedPage
+    Level2finishedPage,
+    Level3finishedPage,
+    HomefinishedPage
   ],
   providers: [
     StatusBar,
