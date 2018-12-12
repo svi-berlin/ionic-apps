@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Advent Advent ...
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    
+    <ion-grid>
+        <ion-row>
+            <ion-col col-4 *ngFor="let day of adventDaysProvider.adventDays">
+ 
+                <flash-card [flipped]="day.flipped" (click)="flip(day)">
+ 
+                    <div class="flash-card-front">{{ day.front }}</div>
+ 
+                    <div class="flash-card-back">{{ day.content }}</div>
+ 
+                </flash-card>
+ 
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+ 
+</ion-content>
