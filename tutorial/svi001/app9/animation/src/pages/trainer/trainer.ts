@@ -9,6 +9,8 @@ import { TrainerProvider } from '../../providers/data/trainer';
 
 export class TrainerPage {
 
+    activeQuestion: number = 0;
+
     hasAnswered: boolean = false;
     score: number = 0;
  
@@ -45,14 +47,23 @@ export class TrainerPage {
  
         setTimeout(() => {
             this.hasAnswered = false;
-           //S this.nextSlide();
+            this.nextSlide();
             answer.selected = false;
             question.flashCardFlipped = false;
         }, 3000);
     }
  
+    nextSlide() {
+        this.activeQuestion++;
+    }
  
-    
+    isHidden(item) {
+        if (item == this.activeQuestion) {
+            return false;
+        } else {
+            return true;
+        }
+    }
  
     
  
