@@ -2,36 +2,47 @@
     "questions": [
  
         {
-            "flashCardFront": "<img src='assets/images/helicopter.png' />",
-            "flashCardBack": "Helicopter",
+            "flashCardFront": "<img src='assets/imgs/quiz/buch.png' />",
+            "flashCardBack": "(neutrum) ein Buch, das Buch, die Bücher (Plural). Ich lese ein Buch. (direktes Objekt, Akkusativ)",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            "questionText": "Was ist das?",
             "answers": [
-                {"answer": "Helicopter", "correct": true, "selected": false},
-                {"answer": "Plane", "correct": false, "selected": false},
-                {"answer": "Truck", "correct": false, "selected": false}
+                {"answer": "ein Buch", "correct": true, "selected": false},
+                {"answer": "ein Heft", "correct": false, "selected": false},
+                {"answer": "ein Stift", "correct": false, "selected": false}
             ]
         },
         {
-            "flashCardFront": "<img src='assets/images/plane.png' />",
-            "flashCardBack": "Plane",
+            "flashCardFront": "<img src='assets/imgs/quiz/stuhl.png' />",
+            "flashCardBack": "(maskulin) ein Stuhl, der Stuhl, die Stühle (Plural). Er kauft den Stuhl. (direktes Objekt, Akkusativ)",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            "questionText": "Was ist das?",
             "answers": [
-                {"answer": "Helicopter", "correct": false, "selected": false},
-                {"answer": "Plane", "correct": true, "selected": false},
-                {"answer": "Truck", "correct": false, "selected": false}
+                {"answer": "eine Tasse", "correct": false, "selected": false},
+                {"answer": "ein Laptop", "correct": false, "selected": false},
+                {"answer": "ein Stuhl", "correct": true, "selected": false}
             ]
         },
         {
-            "flashCardFront": "<img src='assets/images/truck.png' />",
-            "flashCardBack": "Truck",
+            "flashCardFront": "<img src='assets/imgs/quiz/lampe.png' />",
+            "flashCardBack": "(feminin) eine Lampe, die Lampe, die Lampen (Plural). Wir sehen die Lampe. (direktes Objekt, Akkusativ)",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            "questionText": "Was ist das?",
             "answers": [
-                {"answer": "Helicopter", "correct": false, "selected": false},
-                {"answer": "Plane", "correct": false, "selected": false},
-                {"answer": "Truck", "correct": true, "selected": false}
+                {"answer": "ein Bett", "correct": false, "selected": false},
+                {"answer": "eine Lampe", "correct": true, "selected": false},
+                {"answer": "ein Schreibtisch", "correct": false, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/quiz/tisch.png' />",
+            "flashCardBack": "(maskulin) ein Tisch, der Tisch, die Tische (Plural). Wir tragen den Tisch. (direktes Objekt, Akkusativ)",
+            "flashCardFlipped": false,
+            "questionText": "Was ist das?",
+            "answers": [
+                {"answer": "ein Tisch", "correct": true, "selected": false},
+                {"answer": "ein Stuhl", "correct": false, "selected": false},
+                {"answer": "ein Schrank", "correct": false, "selected": false}
             ]
         }
  

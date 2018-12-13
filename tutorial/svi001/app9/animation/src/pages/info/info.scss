@@ -1,6 +1,11 @@
 .ios, .md {
  
     page-info {
+
+        .content-md {
+            color: #fff;
+            background-color: #ff7400;
+        }
  
         ion-slide {
             align-items: flex-start;
@@ -29,6 +34,11 @@
                 font-size: 1.3em;
                 font-weight: bold;
             }
+        }
+
+        .button-md-primary {
+            background-color: #FFF;
+            color: #ff7400;
         }
  
     }

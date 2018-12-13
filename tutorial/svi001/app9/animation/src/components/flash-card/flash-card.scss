@@ -20,6 +20,7 @@
             width: 90vw;
             height: 40vh;
             margin: 20px auto;
+            overflow:hidden;
         }
  
         /* flip speed goes here */
@@ -35,7 +36,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: #ecf0f1;
+            background-color: #fff;
             backface-visibility: hidden;
             -webkit-box-shadow: 0px 8px 4px -4px rgba(163,163,163,0.25);
             -moz-box-shadow: 0px 8px 4px -4px rgba(163,163,163,0.25);
@@ -61,4 +62,12 @@
  
     }
  
+}
+
+.ios page-info ion-item, .md page-info ion-item {
+    background-color: #fff !important;
+}
+
+.swiper-slide img {
+    max-width: 44% !important;
 }

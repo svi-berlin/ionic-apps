@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { L1Page } from '../l1/l1';
 import { L11Page } from '../l11/l11';
 import { L21Page } from '../l21/l21';
