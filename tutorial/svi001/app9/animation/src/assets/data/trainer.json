@@ -1,0 +1,52 @@
+{
+    "questions": [
+ 
+        {
+            "flashCardFront": "<img src='assets/imgs/quiz/buch.png' />",
+            "flashCardBack": "(neutrum) ein Buch, das Buch, die Bücher (Plural). Ich lese ein Buch. (direktes Objekt, Akkusativ)",
+            "flashCardFlipped": false,
+            "questionText": "Peter trinkt ... Kaffee.",
+            "answers": [
+                {"answer": "einen", "correct": true, "selected": false},
+                {"answer": "eine", "correct": false, "selected": false},
+                {"answer": "die", "correct": false, "selected": false},
+                {"answer": "das", "correct": false, "selected": false},
+                {"answer": "ein", "correct": false, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/quiz/stuhl.png' />",
+            "flashCardBack": "(maskulin) ein Stuhl, der Stuhl, die Stühle (Plural). Er kauft den Stuhl. (direktes Objekt, Akkusativ)",
+            "flashCardFlipped": false,
+            "questionText": "Was ist das?",
+            "answers": [
+                {"answer": "eine Tasse", "correct": false, "selected": false},
+                {"answer": "ein Laptop", "correct": false, "selected": false},
+                {"answer": "ein Stuhl", "correct": true, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/quiz/lampe.png' />",
+            "flashCardBack": "(feminin) eine Lampe, die Lampe, die Lampen (Plural). Wir sehen die Lampe. (direktes Objekt, Akkusativ)",
+            "flashCardFlipped": false,
+            "questionText": "Was ist das?",
+            "answers": [
+                {"answer": "ein Bett", "correct": false, "selected": false},
+                {"answer": "eine Lampe", "correct": true, "selected": false},
+                {"answer": "ein Schreibtisch", "correct": false, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/quiz/tisch.png' />",
+            "flashCardBack": "(maskulin) ein Tisch, der Tisch, die Tische (Plural). Wir tragen den Tisch. (direktes Objekt, Akkusativ)",
+            "flashCardFlipped": false,
+            "questionText": "Was ist das?",
+            "answers": [
+                {"answer": "ein Tisch", "correct": true, "selected": false},
+                {"answer": "ein Stuhl", "correct": false, "selected": false},
+                {"answer": "ein Schrank", "correct": false, "selected": false}
+            ]
+        }
+ 
+    ]
+}

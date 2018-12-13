@@ -8,7 +8,7 @@ import { HttpModule } from '@angular/http';
 import { FlashCardComponent } from '../components/flash-card/flash-card';
 
 
-
+import { TrainerPage } from '../pages/trainer/trainer';
 import { InfoPage } from '../pages/info/info';
 import { TabsPage } from '../pages/tabs/tabs';
 import { HomePage } from '../pages/home/home';
@@ -53,10 +53,12 @@ import { HomefinishedPage } from '../pages/homefinished/homefinished';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { DataProvider } from '../providers/data/data';
+import { TrainerProvider } from '../providers/data/trainer';
 
 @NgModule({
   declarations: [
     MyApp,
+    TrainerPage,
     InfoPage,
     HomePage,
     TabsPage,
@@ -105,6 +107,7 @@ import { DataProvider } from '../providers/data/data';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    TrainerPage,
     InfoPage,
     HomePage,
     TabsPage,
@@ -146,9 +149,9 @@ import { DataProvider } from '../providers/data/data';
   providers: [
     StatusBar,
     SplashScreen,
-    
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    DataProvider
+    DataProvider,
+    TrainerProvider
   ]
 })
 export class AppModule {}
