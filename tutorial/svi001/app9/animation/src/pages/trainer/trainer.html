@@ -10,9 +10,9 @@
     <ion-item *ngFor="let question of questions; let i = index;" class="item_{{i}}">
         <button ion-button color="secondary" round>{{question.questionText}}</button>
         <ion-card padding>
-            <ion-item *ngFor="let answer of question.answers; let i = index;">
+            <ion-item *ngFor="let answer of question.answers; let a = index;">
                 <div class="bubble">
-                    <button ion-button round [color]="applyClass_2 ? 'danger' : 'primary'" (click)="selectAnswer(answer, question)">{{answer.answer}}</button>
+                    <button ion-button round [color]="answer.selected ? 'danger' : 'primary'" (click)="selectAnswer(answer, question)">{{answer.answer}}</button>
                 </div>             
             </ion-item>
         </ion-card>    

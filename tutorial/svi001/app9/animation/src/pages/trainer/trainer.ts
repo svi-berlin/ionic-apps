@@ -8,7 +8,7 @@ import { TrainerProvider } from '../../providers/data/trainer';
 })
 
 export class TrainerPage {
- 
+
     hasAnswered: boolean = false;
     score: number = 0;
  
@@ -31,11 +31,16 @@ export class TrainerPage {
     selectAnswer(answer, question){
  
         this.hasAnswered = true;
-        answer.selected = true;
+        
         question.flashCardFlipped = true;
- console.log(answer.correct);
+ 
+        
+
         if(answer.correct){
             this.score++;
+            answer.selected = false;
+        } else {
+            answer.selected = true;
         }
  
         setTimeout(() => {
