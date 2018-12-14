@@ -5,6 +5,20 @@
 
 }
 
+.card-header-md {
+    
+    border-bottom: 1px solid silver;
+    margin-bottom: 10px;
+}
+
+.clickable {
+  .card-header-md {
+    color:#fff;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 10px;
+  }
+}
+
 .simplebump {
    transform: translateX(200px);      // entlang der X-Achse bewegen
 }

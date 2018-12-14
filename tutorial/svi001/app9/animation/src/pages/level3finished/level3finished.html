@@ -1,23 +1,19 @@
-<ion-header>
-	<ion-navbar>
-		<ion-title>
-			Level 3
-		</ion-title>
-	</ion-navbar>
-</ion-header>
 <ion-content padding text-center>
 	<h1>
-		Congratulation!
+		Herzlichen Glückwunsch!!
 	</h1>
 	<ion-card padding text-center>
-		<ion-card-header>Level 3</ion-card-header>
+		<ion-card-header>Du hast Level das nächste Level erreicht.</ion-card-header>
 		<ion-card-content>
 			<ion-icon name="trophy" class="congratulation active"></ion-icon>
 		</ion-card-content>
 	</ion-card>
-<ion-card class="clickable" (click)="startLevel(4)">
+<ion-card class="clickable" (click)="nextLevel()">
 	<ion-card-header>
-		Herzlichsten Glückwunsch!
+		weiter mit Level 5
 	</ion-card-header>
+	<ion-card-content class="todo">
+		Teste deinen Wortschatz!
+	</ion-card-content>
 </ion-card>
 </ion-content>

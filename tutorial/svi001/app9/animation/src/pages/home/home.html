@@ -1,49 +1,55 @@
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>Deutsch A1 Trainer</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
 <ion-content padding>
+	<ion-card class="clickable" (click)="startLevel(0)">
+		<ion-card-header>
+			Level 1
+		</ion-card-header>
+		<ion-card-content class="todo">
+			Teste deinen Wortschatz I
+		</ion-card-content>
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			Level 2
+		</ion-card-header>
+		<ion-card-content class="todo">
+			Löse 10 Aufgaben: du lernst ...
+		</ion-card-content>
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			Level 3
+		</ion-card-header>
+		<ion-card-content class="todo">
+			Teste deinen Wortschatz II
+		</ion-card-content>
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			Level 4
+		</ion-card-header>
+		<ion-card-content class="todo">
+			Löse 10 Aufgaben: Zahlen und Wochentage
 
-<ion-card>
-	<ion-card-header>
-		Willkommen!
-	</ion-card-header>
-	<ion-card-content>
-		Deutsch A1 Trainer
-	</ion-card-content>
-</ion-card>
-
-<ion-card class="clickable" (click)="startLevel(1)">
-	<ion-card-header>
-		Level 1
-	</ion-card-header>
-	<ion-card-content class="todo">
-		Löse die ersten 10 Aufgaben, um Level 1 zu erreichen!
-	</ion-card-content>
-</ion-card>
-
-<ion-card>
-	<ion-card-header>
-		Level 2
-	</ion-card-header>
-	<ion-card-content class="todo">
-		Wochentage und Zahlen
-	</ion-card-content>
-</ion-card>
-
-<ion-card>
-	<ion-card-header>
-		Level 3
-	</ion-card-header>
-	<ion-card-content class="todo">
-		Ich habe einen Computer.<br>
-		Das Akkusativ-Objekt.
-	</ion-card-content>
-</ion-card>
-
+			Ich habe einen Computer.<br>
+			Das Akkusativ-Objekt.
+		</ion-card-content>
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			Level 5
+		</ion-card-header>
+		<ion-card-content class="todo">
+			Teste deinen Wortschatz III
+		</ion-card-content>
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			Level 6
+		</ion-card-header>
+		<ion-card-content class="todo">
+			Löse 10 Aufgaben: <br>
+			Ich habe einen Computer.<br>
+			Das Akkusativ-Objekt.
+		</ion-card-content>
+	</ion-card>
 </ion-content>

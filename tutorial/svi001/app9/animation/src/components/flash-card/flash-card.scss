@@ -16,8 +16,15 @@
                 transform: rotateY(180deg);
             }
  
-        .flip-container, .front, .back {
+        
+        .back {
             width: 90vw;
+            height: 40vh;
+            margin: 20px auto;
+            overflow:hidden;
+        }
+         .flip-container,  
+        .front {   
             height: 40vh;
             margin: 20px auto;
             overflow:hidden;
@@ -70,4 +77,8 @@
 
 .swiper-slide img {
     max-width: 44% !important;
+}
+
+.md page-info flash-card img {
+    display: inline;
 }

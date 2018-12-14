@@ -1,31 +1,30 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 import { L1Page } from '../l1/l1';
 import { L11Page } from '../l11/l11';
 import { L21Page } from '../l21/l21';
+import { InfoPage } from '../info/info';
 
-@IonicPage()
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html',
 })
+
 export class HomePage {
-
-	level1Finished: boolean = false;
-
-  	constructor(public navCtrl: NavController, public navParams: NavParams) {
-  	}
-
-  	startLevel(level: number) {
-  			if (level==1) {
-  				this.navCtrl.push(L1Page);	
-  			}
-  			if (level==2) {
-  				this.navCtrl.push(L11Page);	
-  			}
-        if (level==3) {
-          this.navCtrl.push(L21Page); 
-        }
-  	}
-
+	constructor(public navCtrl: NavController) {
+	}
+	startLevel(level: number) {
+			if (level==0) {
+        this.navCtrl.push(InfoPage);  
+      }
+      else if (level==1) {
+				this.navCtrl.push(L1Page);	
+			}
+			else if (level==2) {
+				this.navCtrl.push(L11Page);	
+			}
+      else if (level==3) {
+        this.navCtrl.push(L21Page); 
+      }
+	}
 }

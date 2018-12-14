@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
-import { L1Page } from '../l1/l1';
-import { L11Page } from '../l11/l11';
-import { L21Page } from '../l21/l21';
+import { NavController } from 'ionic-angular';
+import { Cards1Page } from '../cards1/cards1';
 
 @Component({
   selector: 'page-level2finished',
@@ -10,21 +8,9 @@ import { L21Page } from '../l21/l21';
 })
 
 export class Level2finishedPage {
-
-    constructor(public navCtrl: NavController, public navParams: NavParams) {
+    constructor(public navCtrl: NavController) {
     }
-
-startLevel(level: number) {
-  			if (level==1) {
-  				this.navCtrl.push(L1Page);	
-  			}
-  			if (level==2) {
-  				this.navCtrl.push(L11Page);	
-  			}
-        if (level==3) {
-          this.navCtrl.push(L21Page); 
-        }
+    nextLevel() {
+      this.navCtrl.push(Cards1Page); 
   	}
-  	
-  
 }

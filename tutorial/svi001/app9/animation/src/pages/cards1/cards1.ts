@@ -1,14 +1,14 @@
 import { Component, ViewChild } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { DataProvider } from '../../providers/data/data';
-import { L1Page } from '../l1/l1';
+import { Cards1Provider } from '../../providers/data/cards1';
+import { L11Page } from '../l11/l11';
 
 @Component({
-  selector: 'page-info',
-  templateUrl: 'info.html'
+  selector: 'page-cards1',
+  templateUrl: 'cards1.html'
 })
 
-export class InfoPage {
+export class Cards1Page {
  
     @ViewChild('slides') slides: any;
  
@@ -18,7 +18,7 @@ export class InfoPage {
     slideOptions: any;
     questions: any;
  
-    constructor(public navCtrl: NavController, public dataService: DataProvider) {
+    constructor(public navCtrl: NavController, public dataService: Cards1Provider) {
  
     }
  
@@ -82,7 +82,7 @@ export class InfoPage {
  
     restartQuiz(correctAnswers: number) {
         if (correctAnswers == this.questions.length) {
-            this.navCtrl.push(L1Page);
+            this.navCtrl.push(L11Page);
         } else {
             this.score = 0;
             this.slides.lockSwipes(false);

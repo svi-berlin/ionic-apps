@@ -1,17 +1,9 @@
 {
     "questions": [
  
-        {
-            "flashCardFront": "<img src='assets/imgs/quiz/buch.png' />",
-            "flashCardBack": "ein Buch",
-            "flashCardFlipped": false,
-            "questionText": "Was ist das?",
-            "answers": [
-                {"answer": "ein Buch", "correct": true, "selected": false},
-                {"answer": "ein Heft", "correct": false, "selected": false},
-                {"answer": "ein Stift", "correct": false, "selected": false}
-            ]
-        },
+        
+
+
         {
             "flashCardFront": "<img src='assets/imgs/quiz/stuhl.png' />",
             "flashCardBack": "ein Stuhl",
@@ -23,6 +15,18 @@
                 {"answer": "ein Stuhl", "correct": true, "selected": false}
             ]
         },
+        {
+            "flashCardFront": "<img src='assets/imgs/quiz/buch.png' />",
+            "flashCardBack": "ein Buch",
+            "flashCardFlipped": false,
+            "questionText": "Was ist das?",
+            "answers": [
+                {"answer": "ein Buch", "correct": true, "selected": false},
+                {"answer": "ein Heft", "correct": false, "selected": false},
+                {"answer": "ein Stift", "correct": false, "selected": false}
+            ]
+        },
+
         {
             "flashCardFront": "<img src='assets/imgs/quiz/lampe.png' />",
             "flashCardBack": "eine Lampe",

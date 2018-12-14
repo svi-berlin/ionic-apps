@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 // console.log
-import { Level1finishedPage } from '../level1finished/level1finished';
+import { Level2finishedPage } from '../level2finished/level2finished';
 
 @Component({
   selector: 'page-l10',
@@ -39,10 +39,6 @@ export class L10Page {
 
   }
 
-
-
-
-
   giveAnswer(answer) {
    
    if (answer == 1) {
@@ -51,8 +47,7 @@ export class L10Page {
       this.visibleState = 'invisible';
 
       setTimeout(() => {
-          // console.log('hi');
-            this.navCtrl.push(Level1finishedPage);
+            this.navCtrl.push(Level2finishedPage);
         }, 1500);
     } 
    } else {

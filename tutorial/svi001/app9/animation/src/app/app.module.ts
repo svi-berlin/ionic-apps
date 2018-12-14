@@ -6,10 +6,10 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HttpModule } from '@angular/http';
 import { FlashCardComponent } from '../components/flash-card/flash-card';
-
-
 import { TrainerPage } from '../pages/trainer/trainer';
 import { InfoPage } from '../pages/info/info';
+import { Cards1Page } from '../pages/cards1/cards1';
+import { Cards2Page } from '../pages/cards2/cards2';
 import { TabsPage } from '../pages/tabs/tabs';
 import { HomePage } from '../pages/home/home';
 import { L1Page } from '../pages/l1/l1';
@@ -54,12 +54,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { DataProvider } from '../providers/data/data';
 import { TrainerProvider } from '../providers/data/trainer';
+import { Cards1Provider } from '../providers/data/cards1';
 
 @NgModule({
   declarations: [
     MyApp,
     TrainerPage,
     InfoPage,
+    Cards1Page,
+    Cards2Page,
     HomePage,
     TabsPage,
     L1Page,
@@ -109,6 +112,8 @@ import { TrainerProvider } from '../providers/data/trainer';
     MyApp,
     TrainerPage,
     InfoPage,
+    Cards1Page,
+    Cards2Page,
     HomePage,
     TabsPage,
     L1Page,
@@ -151,7 +156,8 @@ import { TrainerProvider } from '../providers/data/trainer';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     DataProvider,
-    TrainerProvider
+    TrainerProvider,
+    Cards1Provider
   ]
 })
 export class AppModule {}
