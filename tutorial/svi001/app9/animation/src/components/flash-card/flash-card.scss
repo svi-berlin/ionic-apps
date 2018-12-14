@@ -75,9 +75,13 @@
     background-color: #fff !important;
 }
 
+.slides-0 {
 .swiper-slide img {
-    
+    max-width:44% !important;
+    display:inline;
+}    
 }
+
 
 .md page-info flash-card img {
     display: inline;

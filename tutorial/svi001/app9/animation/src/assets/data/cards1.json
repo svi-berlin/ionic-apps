@@ -5,48 +5,109 @@
 
 
         {
-            "flashCardFront": "<img src='assets/imgs/quiz/stuhl.png' />",
-            "flashCardBack": "ein Stuhl",
+            "flashCardFront": "<img src='assets/imgs/quiz/teller.png' />",
+            "flashCardBack": "ein Teller",
             "flashCardFlipped": false,
             "questionText": "Was ist das?",
             "answers": [
                 {"answer": "eine Tasse", "correct": false, "selected": false},
-                {"answer": "ein Laptop", "correct": false, "selected": false},
-                {"answer": "ein Stuhl", "correct": true, "selected": false}
+                {"answer": "ein Messer", "correct": false, "selected": false},
+                {"answer": "ein Besteck", "correct": false, "selected": false},
+                {"answer": "ein Löffel", "correct": false, "selected": false},
+                {"answer": "eine Kanne", "correct": false, "selected": false},
+                {"answer": "ein Teller", "correct": true, "selected": false},
+                {"answer": "eine Gabel", "correct": false, "selected": false}
             ]
         },
         {
-            "flashCardFront": "<img src='assets/imgs/quiz/buch.png' />",
-            "flashCardBack": "ein Buch",
+            "flashCardFront": "<img src='assets/imgs/quiz/tasse.png' />",
+            "flashCardBack": "eine Tasse",
             "flashCardFlipped": false,
             "questionText": "Was ist das?",
             "answers": [
-                {"answer": "ein Buch", "correct": true, "selected": false},
-                {"answer": "ein Heft", "correct": false, "selected": false},
-                {"answer": "ein Stift", "correct": false, "selected": false}
+                {"answer": "eine Tasse", "correct": true, "selected": false},
+                {"answer": "ein Messer", "correct": false, "selected": false},
+                {"answer": "ein Besteck", "correct": false, "selected": false},
+                {"answer": "ein Löffel", "correct": false, "selected": false},
+                {"answer": "eine Kanne", "correct": false, "selected": false},
+                {"answer": "ein Teller", "correct": false, "selected": false},
+                {"answer": "eine Gabel", "correct": false, "selected": false}
             ]
         },
 
         {
-            "flashCardFront": "<img src='assets/imgs/quiz/lampe.png' />",
-            "flashCardBack": "eine Lampe",
+            "flashCardFront": "<img src='assets/imgs/quiz/kanne.png' />",
+            "flashCardBack": "eine Kanne",
             "flashCardFlipped": false,
             "questionText": "Was ist das?",
             "answers": [
-                {"answer": "ein Bett", "correct": false, "selected": false},
-                {"answer": "eine Lampe", "correct": true, "selected": false},
-                {"answer": "ein Schreibtisch", "correct": false, "selected": false}
+                {"answer": "eine Tasse", "correct": false, "selected": false},
+                {"answer": "ein Messer", "correct": false, "selected": false},
+                {"answer": "ein Besteck", "correct": false, "selected": false},
+                {"answer": "ein Löffel", "correct": false, "selected": false},
+                {"answer": "eine Kanne", "correct": true, "selected": false},
+                {"answer": "ein Teller", "correct": false, "selected": false},
+                {"answer": "eine Gabel", "correct": false, "selected": false}
+            ]
+        },
+                {
+            "flashCardFront": "<img src='assets/imgs/quiz/gabel.png' />",
+            "flashCardBack": "eine Gabel",
+            "flashCardFlipped": false,
+            "questionText": "Was ist das?",
+            "answers": [
+                {"answer": "eine Tasse", "correct": false, "selected": false},
+                {"answer": "ein Messer", "correct": false, "selected": false},
+                {"answer": "ein Besteck", "correct": false, "selected": false},
+                {"answer": "ein Löffel", "correct": false, "selected": false},
+                {"answer": "eine Kanne", "correct": false, "selected": false},
+                {"answer": "ein Teller", "correct": false, "selected": false},
+                {"answer": "eine Gabel", "correct": true, "selected": false}
+            ]
+        },
+                        {
+            "flashCardFront": "<img src='assets/imgs/quiz/messer.png' />",
+            "flashCardBack": "ein Messer",
+            "flashCardFlipped": false,
+            "questionText": "Was ist das?",
+            "answers": [
+                {"answer": "eine Tasse", "correct": false, "selected": false},
+                {"answer": "ein Messer", "correct": true, "selected": false},
+                {"answer": "ein Besteck", "correct": false, "selected": false},
+                {"answer": "ein Löffel", "correct": false, "selected": false},
+                {"answer": "eine Kanne", "correct": false, "selected": false},
+                {"answer": "ein Teller", "correct": false, "selected": false},
+                {"answer": "eine Gabel", "correct": false, "selected": false}
+            ]
+        },
+                                {
+            "flashCardFront": "<img src='assets/imgs/quiz/besteck.png' />",
+            "flashCardBack": "ein Besteck",
+            "flashCardFlipped": false,
+            "questionText": "Was ist das?",
+            "answers": [
+                {"answer": "eine Tasse", "correct": false, "selected": false},
+                {"answer": "ein Messer", "correct": false, "selected": false},
+                {"answer": "ein Besteck", "correct": true, "selected": false},
+                {"answer": "ein Löffel", "correct": false, "selected": false},
+                {"answer": "eine Kanne", "correct": false, "selected": false},
+                {"answer": "ein Teller", "correct": false, "selected": false},
+                {"answer": "eine Gabel", "correct": false, "selected": false}
             ]
         },
         {
-            "flashCardFront": "<img src='assets/imgs/quiz/tisch.png' />",
-            "flashCardBack": "ein Tisch",
+            "flashCardFront": "<img src='assets/imgs/quiz/loeffel.png' />",
+            "flashCardBack": "ein Löffel",
             "flashCardFlipped": false,
             "questionText": "Was ist das?",
             "answers": [
-                {"answer": "ein Tisch", "correct": true, "selected": false},
-                {"answer": "ein Stuhl", "correct": false, "selected": false},
-                {"answer": "ein Schrank", "correct": false, "selected": false}
+                {"answer": "eine Tasse", "correct": false, "selected": false},
+                {"answer": "ein Messer", "correct": false, "selected": false},
+                {"answer": "eine Gabel", "correct": false, "selected": false},
+                {"answer": "ein Löffel", "correct": true, "selected": false},
+                {"answer": "eine Kanne", "correct": false, "selected": false},
+                {"answer": "ein Teller", "correct": false, "selected": false},
+                {"answer": "ein Besteck", "correct": false, "selected": false}
             ]
         }
  
