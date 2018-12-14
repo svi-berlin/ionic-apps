@@ -154,3 +154,11 @@ ion-card.card-ios.finished {
 .goodchoice{
   background-color: green;
 }
+
+.note {
+  display: block;
+  text-align: right;
+  p {
+    font-size: 0.8rem;
+  }
+}
