@@ -14,7 +14,7 @@
                 {"answer": "ein Messer", "correct": false, "selected": false},
                 {"answer": "ein Besteck", "correct": false, "selected": false},
                 {"answer": "ein Löffel", "correct": false, "selected": false},
-                {"answer": "eine Kanne", "correct": false, "selected": false},
+                
                 {"answer": "ein Teller", "correct": true, "selected": false},
                 {"answer": "eine Gabel", "correct": false, "selected": false}
             ]
@@ -28,7 +28,7 @@
                 {"answer": "eine Tasse", "correct": true, "selected": false},
                 {"answer": "ein Messer", "correct": false, "selected": false},
                 {"answer": "ein Besteck", "correct": false, "selected": false},
-                {"answer": "ein Löffel", "correct": false, "selected": false},
+                
                 {"answer": "eine Kanne", "correct": false, "selected": false},
                 {"answer": "ein Teller", "correct": false, "selected": false},
                 {"answer": "eine Gabel", "correct": false, "selected": false}
@@ -43,7 +43,7 @@
             "answers": [
                 {"answer": "eine Tasse", "correct": false, "selected": false},
                 {"answer": "ein Messer", "correct": false, "selected": false},
-                {"answer": "ein Besteck", "correct": false, "selected": false},
+                
                 {"answer": "ein Löffel", "correct": false, "selected": false},
                 {"answer": "eine Kanne", "correct": true, "selected": false},
                 {"answer": "ein Teller", "correct": false, "selected": false},
@@ -57,7 +57,7 @@
             "questionText": "Was ist das?",
             "answers": [
                 {"answer": "eine Tasse", "correct": false, "selected": false},
-                {"answer": "ein Messer", "correct": false, "selected": false},
+                
                 {"answer": "ein Besteck", "correct": false, "selected": false},
                 {"answer": "ein Löffel", "correct": false, "selected": false},
                 {"answer": "eine Kanne", "correct": false, "selected": false},
@@ -71,7 +71,7 @@
             "flashCardFlipped": false,
             "questionText": "Was ist das?",
             "answers": [
-                {"answer": "eine Tasse", "correct": false, "selected": false},
+                
                 {"answer": "ein Messer", "correct": true, "selected": false},
                 {"answer": "ein Besteck", "correct": false, "selected": false},
                 {"answer": "ein Löffel", "correct": false, "selected": false},
@@ -89,7 +89,7 @@
                 {"answer": "eine Tasse", "correct": false, "selected": false},
                 {"answer": "ein Messer", "correct": false, "selected": false},
                 {"answer": "ein Besteck", "correct": true, "selected": false},
-                {"answer": "ein Löffel", "correct": false, "selected": false},
+                
                 {"answer": "eine Kanne", "correct": false, "selected": false},
                 {"answer": "ein Teller", "correct": false, "selected": false},
                 {"answer": "eine Gabel", "correct": false, "selected": false}
@@ -106,7 +106,7 @@
                 {"answer": "eine Gabel", "correct": false, "selected": false},
                 {"answer": "ein Löffel", "correct": true, "selected": false},
                 {"answer": "eine Kanne", "correct": false, "selected": false},
-                {"answer": "ein Teller", "correct": false, "selected": false},
+                
                 {"answer": "ein Besteck", "correct": false, "selected": false}
             ]
         }
