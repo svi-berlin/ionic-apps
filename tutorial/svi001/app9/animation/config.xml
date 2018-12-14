@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="deutsch.trainer.spielerisch.a1" version="0.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Deutsch lernen A1 Trainer</name>
-    <description>Spielerisch Deutsch lernen mit dem A1 Trainer.</description>
+<widget id="deutsch.trainer.spielerisch.a1" version="0.0.5" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Deutschkenntnisse testen mit dem A1 Trainer</name>
+    <description>Teste deinen Wortschatz und deine Deutschkenntnisse mit dem A1 Trainer.</description>
     <author email="stephan.vits@gmail.com">Stephan Vits</author>
     <content src="index.html" />
     <access origin="*" />

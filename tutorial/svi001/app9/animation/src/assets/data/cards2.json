@@ -1,0 +1,92 @@
+{
+    "questions": [
+ 
+        
+        {
+            "flashCardFront": "<img src='assets/imgs/quiz/rad.png' />",
+            "flashCardBack": "ein Fahrrad",
+            "flashCardFlipped": false,
+            "questionText": "Was ist das?",
+            "answers": [
+                {"answer": "ein Auto", "correct": false, "selected": false},
+                {"answer": "ein Fahrrad", "correct": true, "selected": false},
+                {"answer": "ein Moterroller", "correct": false, "selected": false},
+                {"answer": "eine Bahn", "correct": false, "selected": false},
+                {"answer": "ein Flugzeug", "correct": false, "selected": false},
+                {"answer": "ein Bus", "correct": false, "selected": false}
+            ]
+        },
+
+        {
+            "flashCardFront": "<img src='assets/imgs/quiz/bus.png' />",
+            "flashCardBack": "ein Bus",
+            "flashCardFlipped": false,
+            "questionText": "Was ist das?",
+            "answers": [
+                {"answer": "eine Bahn", "correct": false, "selected": false},
+                {"answer": "ein Fahrrad", "correct": false, "selected": false},
+                {"answer": "ein Flugzeug", "correct": false, "selected": false},
+                {"answer": "ein Auto", "correct": false, "selected": false},
+                {"answer": "ein Moterroller", "correct": false, "selected": false},
+                {"answer": "ein Bus", "correct": true, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/quiz/auto.png' />",
+            "flashCardBack": "ein Auto",
+            "flashCardFlipped": false,
+            "questionText": "Was ist das?",
+            "answers": [
+                {"answer": "ein Flugzeug", "correct": false, "selected": false},
+                {"answer": "ein Auto", "correct": true, "selected": false},
+                {"answer": "ein Bus", "correct": false, "selected": false},
+                {"answer": "ein Moterroller", "correct": false, "selected": false},
+                {"answer": "eine Bahn", "correct": false, "selected": false},
+                {"answer": "ein Fahrrad", "correct": false, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/quiz/flugzeug.png' />",
+            "flashCardBack": "ein Flugzeug",
+            "flashCardFlipped": false,
+            "questionText": "Was ist das?",
+            "answers": [
+                {"answer": "eine Bahn", "correct": false, "selected": false},
+                {"answer": "ein Auto", "correct": false, "selected": false},
+                {"answer": "ein Flugzeug", "correct": true, "selected": false},
+                {"answer": "ein Bus", "correct": false, "selected": false},
+                {"answer": "ein Moterroller", "correct": false, "selected": false},
+                {"answer": "ein Fahrrad", "correct": false, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/quiz/bahn.png' />",
+            "flashCardBack": "eine Bahn",
+            "flashCardFlipped": false,
+            "questionText": "Was ist das?",
+            "answers": [
+                {"answer": "ein Fahrrad", "correct": false, "selected": false},
+                {"answer": "ein Auto", "correct": false, "selected": false},
+                {"answer": "ein Flugzeug", "correct": false, "selected": false},
+                {"answer": "ein Bus", "correct": false, "selected": false},
+                {"answer": "ein Moterroller", "correct": false, "selected": false},
+                {"answer": "eine Bahn", "correct": true, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/quiz/moterroller.png' />",
+            "flashCardBack": "ein Moterroller",
+            "flashCardFlipped": false,
+            "questionText": "Was ist das?",
+            "answers": [
+                {"answer": "ein Flugzeug", "correct": false, "selected": false},
+                {"answer": "ein Moterroller", "correct": true, "selected": false},
+                {"answer": "ein Auto", "correct": false, "selected": false},
+                {"answer": "eine Bahn", "correct": true, "selected": false},
+                {"answer": "ein Bus", "correct": false, "selected": false},
+                {"answer": "ein Fahrrad", "correct": false, "selected": false}
+            ]
+        }
+ 
+    ]
+}

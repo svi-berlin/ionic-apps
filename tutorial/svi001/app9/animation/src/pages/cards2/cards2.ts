@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { Cards1Provider } from '../../providers/data/cards1';
+import { Cards2Provider } from '../../providers/data/cards2';
 import { L21Page } from '../l21/l21';
 
 @Component({
@@ -18,7 +18,7 @@ export class Cards2Page {
     slideOptions: any;
     questions: any;
  
-    constructor(public navCtrl: NavController, public dataService: Cards1Provider) {
+    constructor(public navCtrl: NavController, public dataService: Cards2Provider) {
  
     }
  

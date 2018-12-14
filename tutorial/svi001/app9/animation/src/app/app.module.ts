@@ -55,6 +55,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DataProvider } from '../providers/data/data';
 import { TrainerProvider } from '../providers/data/trainer';
 import { Cards1Provider } from '../providers/data/cards1';
+import { Cards2Provider } from '../providers/data/cards2';
 
 @NgModule({
   declarations: [
@@ -157,7 +158,8 @@ import { Cards1Provider } from '../providers/data/cards1';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     DataProvider,
     TrainerProvider,
-    Cards1Provider
+    Cards1Provider,
+    Cards2Provider
   ]
 })
 export class AppModule {}
