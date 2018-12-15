@@ -8,7 +8,7 @@
             
            
             <ion-card padding>
-            
+            <h1>Richtige Antworten: {{score}}</h1>
             <flash-card [isFlipped]="question.flashCardFlipped">
                 <div class="flash-card-front" [innerHTML]="question.flashCardFront"></div>
                 <div class="flash-card-back" [innerHTML]="question.flashCardBack"></div>
@@ -17,11 +17,11 @@
             <ion-list no-lines radio-group>
                 <ion-item *ngFor="let answer of question.answers; let i = index;">
                     <ion-label>{{i+1}}. {{answer.answer}}</ion-label>
-                    <ion-radio (click)="selectAnswer(answer, question)" [checked]="answer.selected" [disabled]="hasAnswered"></ion-radio>
+                    <ion-radio (click)="selectAnswer(answer, question)" [class.secondary]="answer.correct" [checked]="answer.selected" [disabled]="hasAnswered"></ion-radio>
                 </ion-item>
             </ion-list>
 
-            <h2>Richtige Antworten: {{score}}</h2>
+            
 
             </ion-card>
         </ion-slide>

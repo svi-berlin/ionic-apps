@@ -3,46 +3,50 @@
  
         {
             "flashCardFront": "<img src='assets/imgs/quiz/buch.png' />",
-            "flashCardBack": "ein Buch",
+            "flashCardBack": "das Buch (neutrum)<br>Ich lese ein Buch.",
             "flashCardFlipped": false,
             "questionText": "Was ist das?",
             "answers": [
-                {"answer": "ein Buch", "correct": true, "selected": false},
-                {"answer": "ein Heft", "correct": false, "selected": false},
-                {"answer": "ein Stift", "correct": false, "selected": false}
+                {"answer": "das Buch", "correct": true, "selected": false},
+                {"answer": "der Tisch", "correct": false, "selected": false},
+                {"answer": "der Stuhl", "correct": false, "selected": false},
+                {"answer": "die Lampe", "correct": false, "selected": false}
             ]
         },
         {
             "flashCardFront": "<img src='assets/imgs/quiz/stuhl.png' />",
-            "flashCardBack": "ein Stuhl",
+            "flashCardBack": "der Stuhl (maskulin)<br>Ich kaufe einen Stuhl.",
             "flashCardFlipped": false,
             "questionText": "Was ist das?",
             "answers": [
-                {"answer": "eine Tasse", "correct": false, "selected": false},
-                {"answer": "ein Laptop", "correct": false, "selected": false},
-                {"answer": "ein Stuhl", "correct": true, "selected": false}
+                {"answer": "das Buch", "correct": false, "selected": false},
+                {"answer": "der Tisch", "correct": false, "selected": false},
+                {"answer": "der Stuhl", "correct": true, "selected": false},
+                {"answer": "die Lampe", "correct": false, "selected": false}
             ]
         },
         {
             "flashCardFront": "<img src='assets/imgs/quiz/lampe.png' />",
-            "flashCardBack": "eine Lampe",
+            "flashCardBack": "die Lampe (feminin)<br>Sie schaltet die Lampe ein.",
             "flashCardFlipped": false,
             "questionText": "Was ist das?",
             "answers": [
-                {"answer": "ein Bett", "correct": false, "selected": false},
-                {"answer": "eine Lampe", "correct": true, "selected": false},
-                {"answer": "ein Schreibtisch", "correct": false, "selected": false}
+                {"answer": "das Buch", "correct": false, "selected": false},
+                {"answer": "der Tisch", "correct": false, "selected": false},
+                {"answer": "der Stuhl", "correct": false, "selected": false},
+                {"answer": "die Lampe", "correct": true, "selected": false}
             ]
         },
         {
             "flashCardFront": "<img src='assets/imgs/quiz/tisch.png' />",
-            "flashCardBack": "ein Tisch",
+            "flashCardBack": "der Tisch (maskulin)<br>Er legt das Buch auf den Tisch.",
             "flashCardFlipped": false,
             "questionText": "Was ist das?",
             "answers": [
-                {"answer": "ein Tisch", "correct": true, "selected": false},
-                {"answer": "ein Stuhl", "correct": false, "selected": false},
-                {"answer": "ein Schrank", "correct": false, "selected": false}
+                {"answer": "das Buch", "correct": false, "selected": false},
+                {"answer": "der Tisch", "correct": true, "selected": false},
+                {"answer": "der Stuhl", "correct": false, "selected": false},
+                {"answer": "die Lampe", "correct": false, "selected": false}
             ]
         }
  

@@ -64,7 +64,7 @@ export class InfoPage {
             this.nextSlide();
             answer.selected = false;
             question.flashCardFlipped = false;
-        }, 3000);
+        }, 5000);
     }
  
     randomizeAnswers(rawAnswers: any[]): any[] {
