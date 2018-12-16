@@ -4,27 +4,22 @@
         <ion-slide class="start-slide">
             <button ion-button color="primary" (click)="nextSlide()">Teste deinen Wortschatz!</button>
         </ion-slide>
-        <ion-slide *ngFor="let question of questions; let i = index;">
-            
-           
-            <ion-card padding>
-            <h1>Richtige Antworten: {{score}}</h1>
-            <flash-card [isFlipped]="question.flashCardFlipped">
-                <div class="flash-card-front" [innerHTML]="question.flashCardFront"></div>
-                <div class="flash-card-back" [innerHTML]="question.flashCardBack"></div>
-            </flash-card>
-            
-            <ion-list no-lines radio-group>
-                <ion-item *ngFor="let answer of question.answers; let i = index;">
-                    <ion-label>{{i+1}}. {{answer.answer}}</ion-label>
-                    <ion-radio (click)="selectAnswer(answer, question)" [class.secondary]="answer.correct" [checked]="answer.selected" [disabled]="hasAnswered"></ion-radio>
-                </ion-item>
-            </ion-list>
-
-            
-
+        
+        <ion-slide *ngFor="let question of questions; let i = index;">   
+            <ion-card text-left padding>
+                <h1>Richtige Antworten: {{score}}</h1>
+                <flash-card [isFlipped]="question.flashCardFlipped" text-center>
+                    <div class="flash-card-front" [innerHTML]="question.flashCardFront"></div>
+                    <div class="flash-card-back" [innerHTML]="question.flashCardBack"></div>
+                </flash-card>
+                <span *ngFor="let answer of question.answers; let i = index;">
+                    <div class="bubble">
+                        <button [color]="answer.correct && answer.selected? 'secondary' : 'primary'" (click)="selectAnswer(answer, question)" ion-button round>{{answer.answer}}</button>
+                    </div>
+                </span>
             </ion-card>
         </ion-slide>
+
         <ion-slide>
             <ion-card padding text-center>
                 <ion-card-header>
